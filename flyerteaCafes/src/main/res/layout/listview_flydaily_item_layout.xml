@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cody="http://schemas.android.com/apk/res/com.ideal.flyerteacafes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/app_commen_margin"
+    android:paddingRight="@dimen/app_commen_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/listview_information_article_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:lines="2"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/app_body_black"
+                android:textSize="15dp"
+                android:ellipsize="end"/>
+            <!-- android:singleLine="true" -->
+
+            <TextView
+                android:id="@+id/listview_information_article_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_body_grey"
+                android:textSize="@dimen/listview_body_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/listview_information_article_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/app_body_grey"
+                    android:textSize="@dimen/listview_time_size" />
+
+                <ImageView
+                    android:id="@+id/listview_information_article_article_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/fly_day_comment_icon" />
+
+                <TextView
+                    android:id="@+id/listview_information_article_dateline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/app_body_grey"
+                    android:textSize="@dimen/listview_time_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.ideal.flyerteacafes.ui.controls.FlyRoundImageView
+                android:id="@+id/listview_information_article_logo"
+                android:layout_width="@dimen/list_image_left_width"
+                android:layout_height="@dimen/list_image_left_height"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_def"
+                cody:borderRadius="@dimen/home_pager_radius"
+                cody:type="round"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_line_xi_view" />
+</LinearLayout>

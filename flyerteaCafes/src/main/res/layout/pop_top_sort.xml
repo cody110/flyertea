@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/new_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/app_commen_margin"
+        android:gravity="center_vertical"
+        android:text="最新" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_xi"
+        android:layout_marginLeft="@dimen/app_commen_margin"
+        android:background="@color/app_line_color" />
+
+    <TextView
+        android:id="@+id/hot_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/app_commen_margin"
+        android:gravity="center_vertical"
+        android:text="热门" />
+
+
+</LinearLayout>

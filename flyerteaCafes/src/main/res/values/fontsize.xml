@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 个人资料页字体大小 -->
+    <dimen name="layout_my_username">16sp</dimen>
+    <dimen name="layout_my_sex">16sp</dimen>
+    <dimen name="layout_my_location">16sp</dimen>
+    <!-- 引导页 体验按钮字体大小 -->
+    <dimen name="btn_taste">18sp</dimen>
+
+
+    <!-- 字体大小 -->
+    <!-- 标题字体大小 -->
+    <dimen name="app_bg_title_size">18sp</dimen>
+    <!-- app 正文字体大小 -->
+    <dimen name="app_body_size">14sp</dimen>
+    <dimen name="app_body_size_1">16sp</dimen>
+    <dimen name="app_body_size_2">14sp</dimen>
+    <dimen name="app_body_size_3">12sp</dimen>
+    <dimen name="app_body_size_4">10sp</dimen>
+
+
+    <dimen name="tab">16sp</dimen>
+
+
+    <!-- app滑动选择博客版块字体大小 -->
+    <dimen name="sliding_plate_gradview_size">16sp</dimen>
+    <!-- listview item 正文大小 -->
+    <dimen name="listview_body_size">14sp</dimen>
+    <!-- listview item 标题大小 -->
+    <dimen name="listview_title_size">16sp</dimen>
+    <!-- listview item time大小 -->
+    <dimen name="listview_time_size">12sp</dimen>
+
+    <dimen name="zb_list_comment_size">13sp</dimen>
+
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_15">15sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_22">22sp</dimen>
+
+</resources>

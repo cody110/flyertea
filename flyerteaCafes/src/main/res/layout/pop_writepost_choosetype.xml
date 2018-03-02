@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC"
+    android:orientation="vertical"
+    android:id="@+id/root">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/days_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textSize="42sp"
+            android:textColor="#777777"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/week_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="星期三"
+                android:textColor="#666666"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/year_month_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="07/2017"
+                android:textColor="#666666"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tea_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_tiwen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/send_wenda"
+            android:gravity="center"
+            android:text="提问"
+            android:layout_marginRight="40dp"/>
+
+        <TextView
+            android:id="@+id/btn_send_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/send_pic"
+            android:gravity="center"
+            android:layout_marginRight="40dp"
+            android:text="发图文"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:id="@+id/btn_send_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/send_text"
+            android:gravity="center"
+            android:text="发文字"
+            android:textColor="#666666"/>
+    </LinearLayout>
+
+</FrameLayout>

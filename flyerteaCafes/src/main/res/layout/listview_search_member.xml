@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.ideal.flyerteacafes.ui.controls.RoundImageView
+        android:id="@+id/listview_search_member_face"
+        android:layout_width="@dimen/face_size"
+        android:layout_height="@dimen/face_size"
+        android:src="@drawable/def_face"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/listview_search_member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/app_body_black"
+            android:textSize="@dimen/listview_title_size" />
+
+        <TextView
+            android:id="@+id/listview_search_member_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/app_body_grey"
+            android:textSize="@dimen/listview_body_size" />
+    </LinearLayout>
+
+</LinearLayout>

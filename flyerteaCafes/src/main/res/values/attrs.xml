@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageBtnWithText">
+        <attr name="android:text" />
+        <attr name="android:drawable" />
+    </declare-styleable>
+
+    <declare-styleable name="ToolBar">
+        <attr name="background_bar" format="reference|color" />
+        <attr name="title_bar" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTextColor_bar" format="color" />
+        <attr name="leftBackground" format="reference|color" />
+        <attr name="leftImgSrc" format="reference" />
+        <attr name="leftText" format="string" />
+        <attr name="leftTextColor" format="reference|color" />
+        <attr name="leftTextSize" format="dimension" />
+        <attr name="rightBackground" format="reference|color" />
+        <attr name="rightImgSrc" format="reference" />
+        <attr name="rightText" format="string" />
+        <attr name="rightTextColor" format="reference|color" />
+        <attr name="rightTextSize" format="dimension" />
+    </declare-styleable>
+
+    <!--左边 中文字 右边icon-->
+    <declare-styleable name="LtctriLayout">
+        <attr name="ltMarginLeft" format="dimension" />
+        <attr name="ltMarginRight" format="dimension" />
+        <attr name="ltPadding" format="dimension" />
+        <attr name="ltColor" format="color" />
+        <attr name="ltSize" format="dimension" />
+        <attr name="ltWidth" format="dimension" />
+        <attr name="ltWeight" format="integer" />
+        <attr name="ltHeight" format="dimension" />
+        <attr name="ltText" format="string" />
+        <attr name="ltHintText" format="string" />
+        <attr name="ltHintSize" format="dimension" />
+        <attr name="ltHintColor" format="color" />
+
+        <attr name="ctMarginLeft" format="dimension" />
+        <attr name="ctMarginRight" format="dimension" />
+        <attr name="ctPadding" format="dimension" />
+        <attr name="ctColor" format="color" />
+        <attr name="ctSize" format="dimension" />
+        <attr name="ctWidth" format="dimension" />
+        <attr name="ctWeight" format="integer" />
+        <attr name="ctHeight" format="dimension" />
+        <attr name="ctText" format="string" />
+        <attr name="ctHintText" format="string" />
+        <attr name="ctHintSize" format="dimension" />
+        <attr name="ctHintColor" format="color" />
+        <attr name="ctGravity">
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+
+        <attr name="riMarginLeft" format="dimension" />
+        <attr name="riMarginRight" format="dimension" />
+        <attr name="riSrc" format="reference" />
+    </declare-styleable>
+
+
+    <!--左边文字 右边输入框-->
+    <declare-styleable name="LtreLayout">
+        <attr name="ltMarginLeftLtre" format="dimension" />
+        <attr name="ltMarginRightLtre" format="dimension" />
+        <attr name="ltPaddingLtre" format="dimension" />
+        <attr name="ltColorLtre" format="color" />
+        <attr name="ltSizeLtre" format="dimension" />
+        <attr name="ltWidthLtre" format="dimension" />
+        <attr name="ltWeightLtre" format="integer" />
+        <attr name="ltHeightLtre" format="dimension" />
+        <attr name="ltTextLtre" format="string" />
+        <attr name="ltHintTextLtre" format="string" />
+        <attr name="ltHintSizeLtre" format="dimension" />
+        <attr name="ltHintColorLtre" format="color" />
+
+        <attr name="rtMarginLeftLtre" format="dimension" />
+        <attr name="rtMarginRightLtre" format="dimension" />
+        <attr name="rtPaddingLtre" format="dimension" />
+        <attr name="rtColorLtre" format="color" />
+        <attr name="rtSizeLtre" format="dimension" />
+        <attr name="rtWidthLtre" format="dimension" />
+        <attr name="rtWeightLtre" format="integer" />
+        <attr name="rtHeightLtre" format="dimension" />
+        <attr name="rtTextLtre" format="string" />
+        <attr name="rtHintTextLtre" format="string" />
+        <attr name="rtHintSizeLtre" format="dimension" />
+        <attr name="rtHintColorLtre" format="color" />
+        <attr name="rtBackgroundLtre" format="reference" />
+        <attr name="rtMaxLengthLtre" format="integer" />
+        <attr name="rtGravity">
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <!--直接用的sdk inputtype-->
+        <attr name="rtInputType">
+            <enum name="text" value="0x00000001" />
+            <enum name="number" value="0x00000002" />
+            <enum name="phoneNumber" value="0x00000003" />
+            <enum name="textEmailAddress" value="0x00000021" />
+            <enum name="textPostalAddress" value="0x00000071" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswBackMeasureRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+        <attr name="kswTextOn" format="string" />
+        <attr name="kswTextOff" format="string" />
+        <attr name="kswTextMarginH" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TopicTypeTitle">
+        <attr name="titleString" format="string" />
+    </declare-styleable>
+
+    <!-- PagerSlidingTabStrip -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsDividerWidth" format="dimension" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsPaddingMiddle" format="boolean" />
+        <attr name="pstsTextColorSelected" format="color" />
+        <attr name="pstsTextColorUnSelected" format="color" />
+        <attr name="pstsTextAlpha" format="integer" />
+        <attr name="pstsBottomLineWidth" format="dimension"/>
+        <attr name="pstsTextStyle">
+            <flag name="normal" value="0x0" />
+            <flag name="bold" value="0x1" />
+            <flag name="italic" value="0x2" />
+        </attr>
+        <attr name="pstsTextSelectedStyle">
+            <flag name="normal" value="0x0" />
+            <flag name="bold" value="0x1" />
+            <flag name="italic" value="0x2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar">
+        <!--星星间距-->
+        <attr format="dimension" name="starDistance"/>
+        <!--星星大小-->
+        <attr format="dimension" name="starSize"/>
+        <!--星星个数-->
+        <attr format="integer" name="starCount"/>
+        <!--星星空图-->
+        <attr format="reference" name="starEmpty"/>
+        <!--星星满图-->
+        <attr format="reference" name="starFill"/>
+    </declare-styleable>
+</resources>

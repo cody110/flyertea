@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg_grey">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/not_login_xiaofeifei"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_login"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="@dimen/app_body_size"
+        android:textColor="@color/app_body_grey" />
+
+
+    <TextView
+        android:id="@+id/not_login_tologin_btn"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="@string/immediately_login"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/datum_btn_border"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_bg_title_size"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_account_number"
+            android:layout_marginLeft="150dp"
+            android:textSize="@dimen/app_body_size"
+            android:textColor="@color/app_body_grey" />
+
+        <TextView
+            android:id="@+id/not_login_to_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_body_size"
+            android:textColor="@color/app_bg_title"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

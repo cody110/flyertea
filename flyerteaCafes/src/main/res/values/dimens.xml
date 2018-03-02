@@ -1,0 +1,206 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 优惠列表Item的字体大小 -->
+    <dimen name="item_preferential_list_img_size">180dp</dimen>
+    <dimen name="preferential_list_txt_margin">20dp</dimen>
+    <!-- 赞与不赞文字的间距 -->
+    <dimen name="preferential_zan_txt_margin">5dp</dimen>
+
+    <!-- 优惠列表详情 end -->
+
+    <!-- 边距 -->
+    <dimen name="app_edge_distance">12dp</dimen>
+    <dimen name="listview_distance">12dp</dimen>
+    <!-- listview item 高度 -->
+    <dimen name="listview_item_height">45dp</dimen>
+
+    <!--APP 常用Margin-->
+    <dimen name="app_commen_margin">12dp</dimen>
+    <dimen name="app_commen_pading">12dp</dimen>
+
+    <!--文字间安全距离-->
+    <dimen name="app_string_up_down_safe">10dp</dimen>
+    <dimen name="app_string_center_safe">8dp</dimen>
+    <dimen name="app_string_left_right_safe">12dp</dimen>
+
+    <!--状态栏大概高度-->
+    <dimen name="app_systembar_height">25dp</dimen>
+
+    <!-- 布局宽度 -->
+
+    <!-- 抽屉宽度 -->
+    <dimen name="navigation_drawer_width">250dp</dimen>
+    <!-- 左侧筛选，listview 占抽屉宽度一半 -->
+    <dimen name="dressing_by_screening_list_width">125dp</dimen>
+    <!-- app标题栏高度 -->
+    <dimen name="app_bg_title_height">45dp</dimen>
+    <dimen name="app_bg_title_not_line_height">39dp</dimen>
+    <!-- app标题栏左边按钮宽度 -->
+    <dimen name="app_bg_title_left_width">60dp</dimen>
+    <dimen name="app_bg_title_right_width">60dp</dimen>
+    <!-- app滑动选择博客版块高度 -->
+    <dimen name="sliding_plate_height">45dp</dimen>
+    <!-- 线的高度 -->
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="home_line_height">2dp</dimen>
+    <dimen name="mine_tab_line_height">24dp</dimen>
+    <dimen name="mine_tab_feimi_line_height">10dp</dimen>
+    <dimen name="mine_tab_feimi_line_width">0.2dp</dimen>
+    <dimen name="mine_tab_line_width">0.5dp</dimen>
+
+
+    <!-- 表情view高度 -->
+    <dimen name="look_fragment_height">150dp</dimen>
+
+    <!-- advertisement_viewpager_layout.xml——viewpager高度 -->
+    <dimen name="advertisement_viewpager_layout_height">155dp</dimen>
+    <dimen name="advertisement_viewpager_layout_bottom">30dp</dimen>
+
+
+    <!-- login XML -->
+    <dimen name="login_info_layout_margin_width">30dp</dimen>
+    <dimen name="login_info_layout_margin_top">10dp</dimen>
+    <dimen name="login_img_margin_left">10dp</dimen>
+
+
+    <!-- listview item 距离边距 -->
+    <dimen name="listview_item_distance">12dp</dimen>
+
+    <!-- details bottom layout 高度 -->
+    <dimen name="details_bottom_layout_height">50dp</dimen>
+
+    <!-- 头像大小 -->
+    <dimen name="face_size">40dp</dimen>
+
+    <!-- 信用卡积分 -->
+    <dimen name="creditcard_point_item_title_size">12sp</dimen>
+    <dimen name="creditcard_point_item_name_size">14sp</dimen>
+    <dimen name="creditcard_point_item_height">50dp</dimen>
+
+    <!-- 用户信息 -->
+    <dimen name="userinfo_head_height">50dp</dimen>
+    <dimen name="userinfo_item_height">40dp</dimen>
+    <dimen name="userinfo_item_distace_left">20dp</dimen>
+    <dimen name="userinfo_item_distace_top">10dp</dimen>
+    <dimen name="creditcard_shuoming_text">11sp</dimen>
+
+
+    <dimen name="mythread_tab_text_size">14sp</dimen>
+
+    <dimen name="icon_45">45dp</dimen>
+    <dimen name="show_subscribe_width">50dp</dimen>
+    <dimen name="subscribe_layout_height">30dp</dimen>
+    <dimen name="login_text_size">14sp</dimen>
+    <dimen name="remind_tab_height">30dp</dimen>
+
+    <!-- dialog userinfo Fragment -->
+    <dimen name="userinfo_dialog_width">267dp</dimen>
+    <dimen name="userinfo_dialog_face_width">80dp</dimen>
+    <dimen name="userinfo_dialog_face_margin">20dp</dimen>
+    <dimen name="userinfo_dialog_item_height">47dp</dimen>
+    <dimen name="userinfo_dialog_item_width">240dp</dimen>
+
+    <dimen name="userinfo_dialog_item_textsize">13sp</dimen>
+    <dimen name="userinfo_dialog_item_numsize">17sp</dimen>
+
+    <dimen name="setting_include_item_height">45dp</dimen>
+
+    <dimen name="about_include_item_left_img_width">40dp</dimen>
+    <dimen name="popupwindow_roughdraft_item_height">40dp</dimen>
+
+    <!-- 返回按鈕，距离左边框的距离 -->
+    <dimen name="back_img_margin_left">15dp</dimen>
+
+    <!-- 聊天titlebar 的图片4角的弧度 -->
+    <dimen name="title_bar_center_chat">4dp</dimen>
+    <dimen name="title_bar_center_chat_line_width">1dp</dimen>
+    <dimen name="title_bar_center_chat_width">60dp</dimen>
+    <dimen name="title_bar_center_chat_height">30dp</dimen>
+
+    <!-- 个人资料页头像，编辑个人资料页头像 -->
+    <dimen name="my_head_defaut_size">60dp</dimen>
+
+    <!-- 用户等级图片大小 -->
+    <dimen name="grade_img_width">45dp</dimen>
+    <dimen name="grade_img_height">15dp</dimen>
+
+    <!-- 细的线的高度 -->
+    <dimen name="line_height_xi">1px</dimen>
+    <dimen name="blue_line_height">6px</dimen>
+
+    <dimen name="disinfo_item_height">40dp</dimen>
+    <dimen name="disinfo_item_jianju">15dp</dimen>
+
+    <dimen name="home_pager_radius">2dp</dimen>
+
+    <!--include_person_item-->
+    <dimen name="person_item_heights">50dp</dimen>
+    <dimen name="person_item_height">48dp</dimen>
+    <dimen name="person_item_divider">36dp</dimen>
+
+    <!--APP到边框的安全距离-->
+    <dimen name="body_security_distance">12dp</dimen>
+
+    <dimen name="item_left_view_width">110dp</dimen>
+
+    <dimen name="tabpage_indicator_height">45dp</dimen>
+
+    <dimen name="home_tab_item_distence">20dp</dimen>
+
+    <!--listview 左侧图片宽高-->
+    <dimen name="list_image_left_width">120dp</dimen>
+    <dimen name="list_image_left_height">83dp</dimen>
+    <!--listview 顶部图片高-->
+    <dimen name="list_image_top_height">160dp</dimen>
+    <!--提醒圆点size-->
+    <dimen name="remind_round_dot_size">15dp</dimen>
+
+    <dimen name="zb_list_img_one_width">250dp</dimen>
+
+    <!--actionbar 距离屏幕的Margin-->
+    <dimen name="actionbar_head_right">15dp</dimen>
+    <!--帖子列表分类高度-->
+    <dimen name="community_sub_type_layout_height">50dp</dimen>
+
+    <dimen name="include_item_height">45dp</dimen>
+    <dimen name="add_task_item_height">50dp</dimen>
+    <dimen name="personal_data_left_view_width">80dp</dimen>
+
+    <dimen name="ll_back_width">40dp</dimen>
+
+    <dimen name="app_content_margin">20dp</dimen>
+
+    <!-- include_no_network -->
+    <dimen name="common_margin_top_igv">48dp</dimen>
+    <dimen name="common_margin_top">150dp</dimen>
+
+    <!-- 消息中心 item 高度 -->
+    <dimen name="message_center_item_height">70dp</dimen>
+    <dimen name="message_center_item_divider">55dp</dimen>
+
+    <dimen name="sreening_conditions_height">34dp</dimen>
+    <dimen name="label_conditions_height">32dp</dimen>
+    <dimen name="tasklist_tab_bottom_line_width">40dp</dimen>
+
+    <!--APP中指示器线的高度-->
+    <dimen name="indicator_height">2dp</dimen>
+
+    <!--APP 常用按钮的高度-->
+    <dimen name="commen_btn_height">44dp</dimen>
+    <dimen name="commen_btn_margin">40dp</dimen>
+    <dimen name="comment_btn_margin_left_right">20dp</dimen>
+    <dimen name="comment_btn_margin_top">25dp</dimen>
+
+    <!--app 一般栏目height -->
+    <dimen name="app_column_height">34dp</dimen>
+
+    <!--帖子详情页，底部操作按钮高度-->
+    <dimen name="thread_bottom_icon_width">30dp</dimen>
+
+    <dimen name="thread_bottom_icon_drawpadding">2dp</dimen>
+
+</resources>

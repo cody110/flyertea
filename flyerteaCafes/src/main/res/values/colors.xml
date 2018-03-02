@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    
+    <color name="text_light_grey">#959FA9</color>
+    <color name="text_black">#051039</color>
+    <color name="text_orange">#FF7800</color>
+    <color name="text_blue">#0062E6</color>
+    
+    
+    <color name="bg_light_grey">#F4F5F6</color>
+    <color name="bg_toolbar">#FFFFFF</color>
+    <color name="bg_def">#FFFFFF</color>
+    
+    
+    
+    
+    
+    
+
+    <!-- 颜色代码 -->
+    <!-- 红色 -->
+    <color name="red">#EE0000</color>
+    <!-- 纯白 -->
+    <color name="white">#FFFFFF</color>
+    <color name="title_no_select">#BBDDFF</color>
+    <color name="danlan">#D0E5F8</color>
+    <!--透明色-->
+    <color name="transparent">#00000000</color>
+    <!--半透明-->
+    <color name="translucent">#b0000000</color>
+    <color name="dialog_bg">#66000000</color>
+    <color name="grey">#999999</color>
+    <color name="black">#000000</color>
+    <color name="content">#666666</color>
+    <color name="daojishi">#151515</color>
+
+    <!-- APP 主体颜色 -->
+    <!--正文 秋麒麟-->
+    <color name="app_body_goldenrod">#FFE600</color>
+    <!--辅助黄色-->
+    <color name="app_body_yellow">#edb130</color>
+    <!--黑色-->
+    <color name="app_black">#333333</color>
+    <!-- 正文 偏黑 -->
+    <color name="app_body_black">#4A4A4A</color>
+    <!-- 正文 偏黑 -->
+    <color name="app_body_blacks">#444444</color>
+    <color name="app_body_no_select">#3A3A3A</color>
+    <!-- 灰色 -->
+    <color name="app_grey">#888888</color>
+    <!-- 正文 偏灰 -->
+    <color name="app_body_grey">#9B9B9B</color>
+    <!-- 偏灰的背景色  F6F6F6-->
+    <color name="app_bg_grey">#EEEEEE</color>
+    <!-- 侧边栏背景 -->
+    <color name="drawer_bg">#3D3D3D</color>
+    <!-- 标题栏背景 -->
+    <color name="app_bg_title">#1e90ff</color>
+    <color name="app_bg_title_old">#1e90ff</color>
+    <!-- 线的颜色 -->
+    <color name="app_line_color">#EEF0F2</color>
+    <color name="app_hint_text_color">#CCCCCC</color>
+    <color name="app_line_header_color">#E4E7EB</color>
+
+    <!-- mine -->
+    <color name="mine_tab_line_color">#DFDADF</color>
+    <color name="mine_tab_title_color">#425970</color>
+    <color name="mine_tab_body_color">#BCC1C6</color>
+
+    <!-- listview选中的颜色 -->
+    <color name="listview_choose_color">#9B9B9B</color>
+
+    <!--wheelview里面线的颜色-->
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="sky_ing">#cccccc</color>
+
+    <!-- tabbar是否选中文字颜色 -->
+    <color name="home_not_selected">#999999</color>
+    <color name="home_selected">#3FA0FE</color>
+
+    <color name="topthread_type_gongao">#FF961E</color>
+    <color name="topthread_type_zhiding">#1E90FF</color>
+
+    <!-- 侧边栏 -->
+    <color name="navigation_drawer_lightgrey">#B6BDC3</color>
+
+    <!-- 信用卡结果说明 -->
+    <color name="creditcard_shuoming">#C3C3C3</color>
+    <!-- 论坛版块，筛选条件pop背景 -->
+    <color name="forumpost_pop_bg">#464646</color>
+
+    <!-- 信用卡查询结果 无积分 -->
+    <color name="card_not_integral">#979797</color>
+    <!-- 信用卡查询结果 无积分 -->
+    <color name="card_maybe_not_integral">#CF6875</color>
+
+    <!-- tab my background color -->
+    <color name="tab_my">#F1F0EE</color>
+
+    <!--我的tab bg-->
+    <color name="mine_tab_bg">#33FFFFFF</color>
+
+    <!--直播 tabar bgcolor -->
+    <color name="live_bg_color">#EFEFF4</color>
+
+    <!--直播详情页 评论Item字体颜色-->
+    <color name="live_com_info_item">#666666</color>
+
+    <!-- item选中背景色-->
+    <color name="common_item_clickbg">#DBDBDD</color>
+
+    <color name="advert_translucent">#77000000</color>
+
+    <!--社区按钮选择色 -->
+    <color name="community_list_btn_pressed">#3492F0</color>
+    <color name="community_list_btn_normal">#BBBBBB</color>
+
+    <!--社区首页：看全站 -->
+    <color name="community_btn_see_all_normal">#CCCACA</color>
+    <color name="community_btn_see_all_pressed">#1E90FF</color>
+
+    <!-- 社区列表用户名文本颜色 -->
+    <color name="community_list_username_color">#59636F</color>
+
+    <!-- 评论背景 -->
+    <color name="common_comment_bg">#EBECED</color>
+
+    <!-- 帖子类型背景 -->
+    <color name="topic_type_btn_bg">#F4F4F4</color>
+
+    <!-- listview divider -->
+    <color name="common_divider_color">#E4E4E4</color>
+
+    <!-- 首页热门互动title颜色 -->
+    <color name="home_title_color">#48494E</color>
+
+    <!-- 加我好友 -->
+    <color name="add_friends_btn_normal">#CCCCCC</color>
+
+    <!-- 添加任务 -->
+    <color name="add_task_period_btn_color">#5C9EEB</color>
+    
+    <!-- tab按下背景色 -->
+    <!--<color name="psts_background_tab_pressed">#1AFFFFFF</color>-->
+    <color name="psts_background_tab_pressed">#00FFFFFF</color>
+
+    <!--登录页，未选中状态-->
+    <color name="login_tab_not_select">#99FFFFFF</color>
+
+    <color name="tag_select">#FF7341</color>
+    <color name="tag_unselect">#B7B7B7 </color>
+
+    <!--发帖默认-->
+    <color name="write_thread_hint">#BFC5CB</color>
+
+
+
+    <color name="deep_blue">#0062E6</color>
+
+</resources>

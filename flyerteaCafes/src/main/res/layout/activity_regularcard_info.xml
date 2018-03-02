@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        style="@style/toolbar_white"
+        app:rightText="添加"
+        app:title_bar="常客卡信息" />
+
+
+    <RelativeLayout
+        android:id="@+id/viewPagerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/card_banner"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clipChildren="false">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:clipChildren="false"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <com.ideal.flyerteacafes.ui.view.LtctriLayout
+        android:id="@+id/type_layout"
+        style="@style/ltctri_1"
+        app:ltText="常客卡类型"
+        android:background="@drawable/frames_bottom_margin_left"/>
+
+    <com.ideal.flyerteacafes.ui.view.LtctriLayout
+        android:id="@+id/grade_layout"
+        style="@style/ltctri_1"
+        android:background="@drawable/frames_bottom_margin_left"
+        app:ltText="常客卡等级" />
+
+    <com.ideal.flyerteacafes.ui.view.LtreLayout
+        android:id="@+id/id_layout"
+        style="@style/ltre_1"
+        android:background="@drawable/frames_bottom_margin_left"
+        app:ltTextLtre="常客卡卡号"
+        app:rtGravity="right"
+        app:rtInputType="number" />
+
+    <LinearLayout
+        android:id="@+id/img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:background="@drawable/frames_bottom_margin_left"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app_commen_margin"
+            android:layout_weight="1"
+            android:text="认证图片"
+            android:textColor="@color/app_body_black"
+            android:textSize="@dimen/app_body_size_2" />
+
+
+        <ImageView
+            android:id="@+id/rengzhen_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_def" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/app_commen_margin"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+
+    <com.ideal.flyerteacafes.ui.view.LtctriLayout
+        android:id="@+id/status_layout"
+        style="@style/ltctri_1"
+        android:background="@drawable/frames_bottom"
+        app:ltText="审核状态" />
+
+
+    <TextView
+        android:id="@+id/change_btn"
+        style="@style/button_1"
+        android:layout_marginTop="30dp"
+        android:text="重新认证"
+        android:textSize="@dimen/app_body_size_1"/>
+
+
+    <TextView
+        android:id="@+id/delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="删除当前常客卡"
+        android:textColor="@color/app_body_grey"
+        android:textSize="@dimen/app_body_size_3" />
+
+
+</LinearLayout>

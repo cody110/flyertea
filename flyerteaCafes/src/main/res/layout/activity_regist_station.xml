@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <com.ideal.flyerteacafes.ui.view.AppTitleBar
+        android:id="@+id/regist_station_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/binding_to_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绑定现有账号"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_bg_title_size"
+        android:background="@drawable/bind_zhanghao_btn"/>
+
+    <Button
+        android:id="@+id/regist_to_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="注册新账号"
+        android:textColor="@color/app_bg_title"
+        android:background="@drawable/regist_new_user"/>
+
+</LinearLayout>

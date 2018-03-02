@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_add_friends_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_commen_margin"
+        android:layout_marginRight="@dimen/app_commen_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_my_reply_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_commen_margin"
+                android:maxLines="2"
+                android:textColor="@color/app_body_black"
+                android:textSize="@dimen/app_body_size_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/app_commen_margin"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_my_reply_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/app_body_grey"
+                    android:textSize="@dimen/app_body_size_2" />
+
+                <TextView
+                    android:id="@+id/item_my_reply_forum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="@color/app_body_grey"
+                    android:textSize="@dimen/app_body_size_2"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_my_reply_ignore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:layout_toRightOf="@+id/item_my_reply_title"
+                android:background="@drawable/add_friends_grey_border"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="拒绝"
+                android:textColor="@color/content"
+                android:textSize="@dimen/app_body_size_2" />
+
+            <TextView
+                android:id="@+id/item_my_reply_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:layout_toRightOf="@id/item_my_reply_ignore"
+                android:background="@drawable/community_blue_border"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="接受"
+                android:textColor="@color/community_btn_see_all_pressed"
+                android:textSize="@dimen/app_body_size_2" />
+
+            <Button
+                android:id="@+id/item_my_reply_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_body_size_2"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

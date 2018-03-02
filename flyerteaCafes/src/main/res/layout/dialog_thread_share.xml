@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_bg"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/thread_bottom_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:id="@+id/shar_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="分享让生活更美好"
+            android:textColor="@color/app_body_blacks"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每天前5次分享：威望"
+                android:textColor="@color/app_grey"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <GridView
+            android:id="@+id/thread_bottom_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/white"
+            android:horizontalSpacing="10dp"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="36dp" />
+
+        <include layout="@layout/include_line_xi_view" />
+
+        <TextView
+            android:id="@+id/thread_bottom_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/app_body_size_1" />
+
+    </LinearLayout>
+
+</LinearLayout>

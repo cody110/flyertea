@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp">
+
+        <LinearLayout
+            android:id="@+id/content_tuwen_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/thread_img_layout"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/thread_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:id="@+id/upload_ing_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/content"
+                    android:gravity="center"
+                    android:text="正在上传"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/upload_success_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#398BE1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:drawableLeft="@mipmap/upload_success_img"
+                        android:drawablePadding="2dp"
+                        android:gravity="center"
+                        android:text="上传成功"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/upload_fail_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F07569"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#F07569"
+                            android:drawableLeft="@mipmap/upload_new_start_img"
+                            android:drawablePadding="2dp"
+                            android:gravity="center"
+                            android:text="重新上传"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/video_play_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/video_play" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/thread_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:hint="给图片配点文案~"
+                    android:maxLines="4"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/app_body_black"
+                    android:textColorHint="@color/write_thread_hint"
+                    android:textSize="@dimen/font_size_16" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/typesetting_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/light_grey_dotted_frame"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/thread_item_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/typesetting_up" />
+
+            <ImageView
+                android:id="@+id/thread_delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:src="@mipmap/typesetting_delete" />
+
+            <ImageView
+                android:id="@+id/thread_item_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/typesetting_down" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</FrameLayout>

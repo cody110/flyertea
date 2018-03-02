@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.ideal.flyerteacafes.ui.view.SerachEdittext
+            android:id="@+id/thread_search_edittext"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/app_commen_margin"
+            android:layout_weight="1"
+            android:background="@drawable/light_grey_bg"/>
+
+        <TextView
+            android:id="@+id/hotel_serach_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/app_commen_margin"
+            android:paddingRight="@dimen/app_commen_margin"
+            android:text="取消"
+            android:textColor="@color/app_body_black" />
+    </LinearLayout>
+
+    <include layout="@layout/include_line_xi_view" />
+
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

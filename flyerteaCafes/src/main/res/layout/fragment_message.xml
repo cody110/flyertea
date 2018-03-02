@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_grey"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- 飞客活动 -->
+    <include
+        android:id="@+id/mrl_flyer_activies"
+        layout="@layout/include_activies_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/message_center_item_height" />
+
+    <!--好文推荐-->
+    <include
+        android:id="@+id/mrl_flyer_recommend"
+        layout="@layout/include_activies_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/message_center_item_height"
+        android:layout_marginBottom="@dimen/actionbar_head_right" />
+
+    <!-- 回复我的 -->
+    <include
+        android:id="@+id/mrl_reply_my"
+        layout="@layout/include_message_center_item" />
+    <!-- 送我鲜花 -->
+    <include
+        android:id="@+id/mrl_send_flowers"
+        layout="@layout/include_message_center_item" />
+    <!-- 加我好友 -->
+    <include
+        android:id="@+id/mrl_add_friends"
+        layout="@layout/include_message_center_item" />
+    <!-- 帖子成就 -->
+    <include
+        android:id="@+id/mrl_post_achievement"
+        layout="@layout/include_message_center_item" />
+    <!-- 其他消息 -->
+    <include
+        android:id="@+id/mrl_other_messages"
+        layout="@layout/include_message_center_item" />
+
+</LinearLayout>

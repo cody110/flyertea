@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custombar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        android:id="@+id/communit_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        custombar:leftImgSrc="@drawable/icon_delete"
+        custombar:rightTextSize="@dimen/app_body_size_2"
+        custombar:titleTextSize="@dimen/app_bg_title_size"
+        custombar:rightText="@string/forum_ac_complete"
+        custombar:title_bar="版块推荐" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/mlv_choose_communit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

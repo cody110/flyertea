@@ -1,0 +1,6 @@
+include ':ptr-lib', ':tusdk'
+include ':swipeMenuListViewLibrary'
+include ':social_sdk'
+include ':flyerteaCafes'
+include ':library:CalendarPicker'
+include ':ijkplayer-java', ':upplayer'

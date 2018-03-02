@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.ideal.flyerteacafes.ui.activity.myinfo.TaskView
+        android:id="@+id/header_viewpager_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bg_title_height"
+            android:background="@drawable/frames_bottom"
+            android:orientation="horizontal">
+
+            <com.ideal.flyerteacafes.ui.view.PagerSlidingTabStrip
+                android:id="@+id/tabstrip"
+                style="@style/psts_1" />
+
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.ideal.flyerteacafes.ui.activity.myinfo.TaskView>
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg_title"
+        android:paddingTop="@dimen/app_systembar_height">
+
+        <ImageView
+            android:id="@+id/left_back"
+            android:layout_width="@dimen/app_bg_title_height"
+            android:layout_height="@dimen/app_bg_title_height"
+            android:scaleType="center"
+            android:src="@drawable/left_back_white" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/app_bg_title_height"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <com.ideal.flyerteacafes.ui.controls.WriteThreadImageView
+        android:id="@+id/fm_community_home_write_thread_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/forum_post_write" />
+
+
+</RelativeLayout>

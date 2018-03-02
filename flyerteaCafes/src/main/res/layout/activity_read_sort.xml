@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        app:rightImgSrc="@mipmap/icon_close_black"
+        app:title_bar="我的读帖" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="按住并拖动可以更改频道排序"
+        android:textColor="@color/app_body_grey"
+        android:textSize="@dimen/app_body_size_3" />
+
+    <com.ideal.flyerteacafes.ui.controls.DragSortGridView
+        android:id="@+id/drag_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:padding="10dp"
+        android:verticalSpacing="10dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_grey"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        app:title_bar="@string/drawer_forum"
+        app:rightImgSrc="@mipmap/icon_search_black"/>
+
+    <include layout="@layout/include_line_header_view" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/fragment_forum_one_level_listview"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/app_bg_grey"
+                android:dividerHeight="1px"
+                android:scrollbars="none" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/fragment_forum_two_level_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:divider="@null"
+                        android:scrollbars="none" />
+
+                    <LinearLayout
+                        android:id="@+id/fragment_forum_management_plate_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/app_string_center_safe"
+                            android:text="关注更多 >"
+                            android:textColor="@color/app_bg_title"
+                            android:textSize="@dimen/app_body_size_2" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ViewStub
+                    android:id="@+id/community_normal_add_follow_viewstub"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout="@layout/community_normal_add_follow" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <com.ideal.flyerteacafes.ui.controls.WriteThreadImageView
+            android:id="@+id/fm_community_home_write_thread_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/forum_post_write" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_xi"
+        android:background="@color/app_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/normal_bottom_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/app_string_up_down_safe"
+            android:layout_marginLeft="@dimen/app_commen_margin"
+            android:layout_marginRight="@dimen/app_commen_margin"
+            android:layout_marginTop="@dimen/app_string_up_down_safe"
+            android:layout_weight="1"
+            android:background="@drawable/comment_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="参与回复，表达自我"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/app_body_size_2" />
+
+        <TextView
+            android:id="@+id/post_details_send_flower"
+            android:layout_width="@dimen/details_bottom_layout_height"
+            android:layout_height="@dimen/details_bottom_layout_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/app_commen_margin"
+            android:drawableLeft="@mipmap/post_details_flower_hui"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/content" />
+
+    </LinearLayout>
+
+</LinearLayout>

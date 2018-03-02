@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_details_post_info" />
+
+    <TextView
+        android:id="@+id/include_post_details_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <WebView
+        android:id="@+id/postdetails_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/post_details_flower_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/post_details_flower_click_layout"
+            android:layout_width="@dimen/app_bg_title_right_width"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/post_details_body_flower_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/listview_distance"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="@dimen/listview_time_size" />
+
+            <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:layout_toLeftOf="@id/post_details_body_flower_num"-->
+                <!--android:src="@drawable/flower_big" />-->
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

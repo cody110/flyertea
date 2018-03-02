@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/community_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg_title"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/community_sub_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/app_commen_pading"
+                android:src="@drawable/left_back_white" />
+
+            <TextView
+                android:id="@+id/community_sub_forumname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_bg_title_size" />
+
+            <ImageView
+                android:id="@+id/community_sub_serach_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/app_commen_pading"
+                android:src="@drawable/icon_search" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <fragment
+            android:id="@+id/community_sub_fragment"
+            android:name="com.ideal.flyerteacafes.ui.fragment.page.tab.community.CommunitySubFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <include
+            android:id="@+id/top_community_sub_type_layout"
+            layout="@layout/include_community_sub_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/community_sub_type_layout_height"
+            android:visibility="gone" />
+
+        <com.ideal.flyerteacafes.ui.controls.WriteThreadImageView
+            android:id="@+id/community_sub_write_thread_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/forum_post_write" />
+
+    </RelativeLayout>
+
+</LinearLayout>

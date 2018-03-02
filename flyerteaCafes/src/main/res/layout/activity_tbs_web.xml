@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/actionbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_toolbar">
+
+
+        <ImageView
+            android:id="@+id/actionbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/app_commen_margin"
+            android:paddingRight="@dimen/app_commen_margin"
+            android:scaleType="center"
+            android:src="@drawable/left_back"
+            android:visibility="gone"/>
+
+
+        <ImageView
+            android:id="@+id/actionbar_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/actionbar_back"
+            android:paddingLeft="@dimen/app_commen_margin"
+            android:paddingRight="@dimen/app_commen_margin"
+            android:scaleType="center"
+            android:src="@mipmap/icon_close_black" />
+
+
+        <TextView
+            android:id="@+id/actionbar_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_bg_title_size" />
+
+        <ProgressBar
+            android:id="@+id/tbs_web_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_bg" />
+
+    </RelativeLayout>
+
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/rebate_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

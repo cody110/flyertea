@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_xi"
+        android:background="@color/app_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/normal_bottom_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/app_string_up_down_safe"
+            android:layout_marginLeft="@dimen/app_commen_margin"
+            android:layout_marginRight="@dimen/app_commen_margin"
+            android:layout_marginTop="@dimen/app_string_up_down_safe"
+            android:layout_weight="1"
+            android:background="@drawable/comment_bg"
+            android:drawableLeft="@drawable/thread_comment_pen"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="参与回复，表达自我"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/app_body_size_2" />
+
+
+        <TextView
+            android:id="@+id/major_thread_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:drawableLeft="@drawable/thread_comment"
+            android:gravity="top"
+            android:textColor="@color/app_body_grey"
+            android:textSize="@dimen/app_body_size_4"
+            android:drawablePadding="@dimen/thread_bottom_icon_drawpadding"/>
+
+
+        <TextView
+            android:id="@+id/major_thread_shoucang_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:drawableLeft="@drawable/thread_shoucang"
+            android:gravity="top"
+            android:textColor="@color/app_body_grey"
+            android:textSize="@dimen/app_body_size_4"
+            android:drawablePadding="@dimen/thread_bottom_icon_drawpadding"/>
+
+
+        <TextView
+            android:id="@+id/major_thread_sendflower_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/thread_flower"
+            android:gravity="top"
+            android:textColor="@color/app_body_grey"
+            android:textSize="@dimen/app_body_size_4"
+            android:drawablePadding="@dimen/thread_bottom_icon_drawpadding"/>
+
+
+    </LinearLayout>
+</LinearLayout>

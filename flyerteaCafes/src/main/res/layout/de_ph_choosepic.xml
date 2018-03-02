@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_bar" />
+
+    <GridView
+        android:id="@+id/id_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:clipChildren="true"
+        android:gravity="center"
+        android:horizontalSpacing="3dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dip"/>
+
+
+    <RelativeLayout
+        android:id="@+id/id_bottom_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        android:layout_gravity="bottom"
+        android:background="@color/app_bg_grey"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/id_choose_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:padding="12dip"
+            android:textColor="@color/app_body_grey"
+            android:text="预览"/>
+
+        <TextView
+            android:id="@+id/id_total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0张"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/choose_picture_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/app_bg_title"
+            android:padding="12dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

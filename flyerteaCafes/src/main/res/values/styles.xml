@@ -1,0 +1,211 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomTabPageIndicator">
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="AnimRight" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_right_in</item>
+        <item name="android:windowExitAnimation">@anim/push_right_out</item>
+    </style>
+
+    <style name="AnimTop" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_in_alpha</item>
+        <!-- <item name="android:windowExitAnimation">@anim/push_out_alpha</item> -->
+    </style>
+
+    <style name="Theme.UMDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/loading_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.Start" parent="android:Theme">
+        <item name="android:windowBackground">@drawable/spalsh_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="anim_popup_dir">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="dis_info_left_text_stytle">
+        <item name="android:textColor">@color/app_body_black</item>
+    </style>
+
+    <style name="dis_info_right_text_stytle">
+        <item name="android:textColor">@color/app_body_grey</item>
+    </style>
+
+    <!-- 自定义dialog -->
+    <style name="alertView" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:windowBackground">@drawable/alert_bg</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Theme.CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@android:color/transparent</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="button_1">
+        <item name="android:layout_height">47dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:background">@drawable/blue_publish_border</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/app_body_size_1</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_1">
+        <item name="android:textSize">@dimen/app_body_size_2</item>
+        <item name="android:textColor">@color/app_body_black</item>
+    </style>
+
+
+    <style name="ltctri_1">
+        <item name="android:layout_height">@dimen/include_item_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="com.ideal.flyerteacafes:ltSize">@dimen/app_body_size_2</item>
+        <item name="com.ideal.flyerteacafes:ltColor">@color/app_body_black</item>
+        <item name="com.ideal.flyerteacafes:ctSize">@dimen/app_body_size_2</item>
+        <item name="com.ideal.flyerteacafes:ctColor">@color/app_body_grey</item>
+        <item name="com.ideal.flyerteacafes:riSrc">@drawable/arrow_right</item>
+        <item name="com.ideal.flyerteacafes:ltWeight">1</item>
+    </style>
+
+    <style name="ltctri_2">
+        <item name="android:layout_height">@dimen/include_item_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="com.ideal.flyerteacafes:ltSize">@dimen/app_body_size_2</item>
+        <item name="com.ideal.flyerteacafes:ltColor">@color/app_body_black</item>
+        <item name="com.ideal.flyerteacafes:ctSize">@dimen/app_body_size_2</item>
+        <item name="com.ideal.flyerteacafes:ctColor">@color/app_body_grey</item>
+        <item name="com.ideal.flyerteacafes:ltWeight">1</item>
+    </style>
+
+    <style name="ltre_1">
+        <item name="android:layout_height">@dimen/include_item_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="com.ideal.flyerteacafes:ltSizeLtre">@dimen/app_body_size_2</item>
+        <item name="com.ideal.flyerteacafes:ltColorLtre">@color/app_body_black</item>
+        <item name="com.ideal.flyerteacafes:rtSizeLtre">@dimen/app_body_size_2</item>
+        <item name="com.ideal.flyerteacafes:rtColorLtre">@color/app_body_grey</item>
+    </style>
+
+    <style name="toolbar_white">
+        <item name="android:layout_height">@dimen/app_bg_title_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="com.ideal.flyerteacafes:leftImgSrc">@drawable/left_back</item>
+    </style>
+
+    <style name="toolbar_blue">
+        <item name="android:layout_height">@dimen/app_bg_title_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="com.ideal.flyerteacafes:leftImgSrc">@drawable/left_back_white</item>
+        <item name="com.ideal.flyerteacafes:titleTextColor_bar">@color/white</item>
+        <item name="com.ideal.flyerteacafes:background_bar">@color/app_bg_title</item>
+    </style>
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">32dip</item>
+        <item name="android:maxHeight">32dip</item>
+    </style>
+
+    <!-- PagerSlidingTabStrip  首页样式 黑色 选中粗体 底线蓝色 宽12dp -->
+    <style name="psts_1">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="com.ideal.flyerteacafes:pstsBottomLineWidth">12dp</item>
+        <item name="com.ideal.flyerteacafes:pstsIndicatorColor">@color/text_blue</item>
+        <item name="com.ideal.flyerteacafes:pstsPaddingMiddle">false</item>
+        <item name="com.ideal.flyerteacafes:pstsShouldExpand">false</item>
+        <item name="com.ideal.flyerteacafes:pstsTabPaddingLeftRight">14dp</item>
+        <item name="com.ideal.flyerteacafes:pstsTextColorSelected">@color/text_black</item>
+        <item name="com.ideal.flyerteacafes:pstsTextColorUnSelected">@color/text_black</item>
+        <item name="com.ideal.flyerteacafes:pstsTextSelectedStyle">bold</item>
+    </style>
+
+    <style name="activity_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:background">@color/bg_def</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="line_1px_margin_left_right">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_height_xi</item>
+        <item name="android:background">@drawable/line_margin_left_right</item>
+    </style>
+
+</resources>

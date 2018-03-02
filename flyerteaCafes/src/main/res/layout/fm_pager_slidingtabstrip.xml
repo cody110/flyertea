@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/app_bg_grey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/search_edittext"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/app_commen_margin"
+            android:layout_marginRight="@dimen/app_commen_margin"
+            android:layout_weight="1"
+            android:background="@drawable/white_corners_bg"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/search_grey" />
+
+            <TextView
+                android:id="@+id/hotel_search_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/app_body_grey"
+                android:textSize="@dimen/app_body_size_2"
+                android:text="请出入关键字"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.ideal.flyerteacafes.ui.view.PagerSlidingTabStrip
+        android:id="@+id/tabstrip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:background="@color/white"
+        app:pstsIndicatorColor="@color/white"
+        app:pstsPaddingMiddle="false"
+        app:pstsShouldExpand="false"
+        app:pstsTabPaddingLeftRight="14dp"
+        app:pstsTextColorSelected="@color/text_blue"
+        app:pstsUnderlineColor="@color/text_black" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

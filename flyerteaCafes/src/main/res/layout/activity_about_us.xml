@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        layout="@layout/include_left_title_bar" />
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        android:id="@+id/toolbar"
+        style="@style/toolbar_white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/about_logo"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/about_version_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/listview_distance"
+                android:layout_marginRight="@dimen/listview_distance"
+                android:layout_marginBottom="15dp"
+                android:text="@string/about_us_explain" />
+
+
+            <!-- 关注微信 -->
+            <include
+                android:id="@+id/mrl_focus_wechart"
+                layout="@layout/include_about_us_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/listview_item_height"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/app_line_color"
+                android:layout_marginLeft="@dimen/about_include_item_left_img_width"
+                android:visibility="gone"/>
+
+            <include
+                android:id="@+id/about_us_flyer_caff"
+                layout="@layout/include_about_us_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/listview_item_height" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/app_line_color"
+                android:layout_marginLeft="@dimen/about_include_item_left_img_width" />
+
+            <include
+                android:id="@+id/about_us_flyertea"
+                layout="@layout/include_about_us_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/listview_item_height" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/app_line_color"
+                android:layout_marginLeft="@dimen/about_include_item_left_img_width" />
+
+            <!-- 评论我们 -->
+            <include
+                android:id="@+id/mrl_comment_us"
+                layout="@layout/include_about_us_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/listview_item_height" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/app_line_color"
+                android:layout_marginLeft="@dimen/about_include_item_left_img_width" />
+
+            <include
+                android:id="@+id/about_us_phone"
+                layout="@layout/include_about_us_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/listview_item_height" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/app_line_color"
+                android:layout_marginLeft="@dimen/about_include_item_left_img_width" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

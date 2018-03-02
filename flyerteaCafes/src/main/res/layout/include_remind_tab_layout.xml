@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/mythread_mythread_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/mythread_mythread_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mythread_mythread"
+            android:textColor="@color/app_body_blacks"
+            android:textSize="@dimen/mythread_tab_text_size" />
+
+        <View
+            android:id="@+id/mythread_mythread_bottom"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_body_blacks" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vertical_line"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/mythread_reply_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/mythread_reply_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mythread_repley"
+            android:textColor="@color/app_body_grey"
+            android:textSize="@dimen/mythread_tab_text_size" />
+
+        <View
+            android:id="@+id/mythread_reply_bottom"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

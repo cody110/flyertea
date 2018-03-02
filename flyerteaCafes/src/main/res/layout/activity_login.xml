@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/loging_title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/login"
+            android:textSize="@dimen/app_bg_title_size" />
+
+        <RelativeLayout
+            android:id="@+id/close_login_page"
+            android:layout_width="@dimen/app_bg_title_right_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/cancel" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/login_username_layout"
+        layout="@layout/include_login_edittext_layout" />
+
+    <include
+        android:id="@+id/login_passwords_layout"
+        layout="@layout/include_login_edittext_layout" />
+
+    <include
+        android:id="@+id/login_safety_problem_layout"
+        layout="@layout/include_login_edittext_layout" />
+
+    <include
+        android:id="@+id/login_safety_passwords_layout"
+        layout="@layout/include_login_edittext_layout" />
+
+    <TextView
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/blue_publish_border"
+        android:layout_marginTop="30dp"
+        android:text="@string/immediately_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_bg_title_size"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/login_register_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/login_register_prompt"
+        android:textSize="@dimen/login_text_size"
+        android:textColor="@color/app_body_grey"
+        android:layout_marginTop="20dp" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/about_logo"
+        android:layout_marginTop="60dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/login_term_of_service_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_term_of_service_bg"
+            android:padding="5dp"
+            android:text="@string/login_term_of_service"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

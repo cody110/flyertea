@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="#00000000" />
+
+    <corners
+        android:topLeftRadius="4dp"
+        android:topRightRadius="0dp"
+        android:bottomRightRadius="0dp"
+        android:bottomLeftRadius="4dp" />
+<!--    <padding
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp"
+        android:bottom="1dp" />-->
+    <!-- <stroke android:width="@dimen/title_bar_center_chat_line_width" android:color="@color/white" android:dashGap="0dp"/> -->
+
+    <size
+        android:height="@dimen/title_bar_center_chat_height"
+        android:width="@dimen/title_bar_center_chat_width" />
+
+    <stroke
+        android:width="@dimen/title_bar_center_chat_line_width"
+        android:color="#1E90FF"
+        android:dashGap="0dp" />
+
+</shape>

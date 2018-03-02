@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_grey"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        app:leftImgSrc="@drawable/left_back"
+        app:title_bar="设置" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/zhanghao_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:gravity="center_vertical"
+                android:text="账号设置"
+                android:textColor="@color/app_body_black"
+                android:textSize="@dimen/app_body_size_2" />
+
+            <com.ideal.flyerteacafes.ui.view.LtctriLayout
+                android:id="@+id/phone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_item_height"
+                android:background="@drawable/frames_bottom_margin_left"
+                android:orientation="horizontal"
+                app:ctColor="@color/app_body_grey"
+                app:ctSize="@dimen/app_body_size_2"
+                app:ctText="13764939252"
+                app:ltColor="@color/app_black"
+                app:ltSize="@dimen/app_body_size_1"
+                app:ltText="登录手机号"
+                app:ltWeight="1"
+                app:riSrc="@drawable/arrow_right" />
+
+            <com.ideal.flyerteacafes.ui.view.LtctriLayout
+                android:id="@+id/passwords_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_item_height"
+                android:background="@drawable/frames_bottom_margin_left"
+                android:orientation="horizontal"
+                app:ctColor="@color/app_body_grey"
+                app:ctSize="@dimen/app_body_size_2"
+                app:ctText="修改密码"
+                app:ltColor="@color/app_black"
+                app:ltSize="@dimen/app_body_size_1"
+                app:ltText="密码"
+                app:ltWeight="1"
+                app:riSrc="@drawable/arrow_right" />
+
+            <TextView
+                android:id="@+id/three_login_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:gravity="center_vertical"
+                android:text="第三方登录账号"
+                android:textColor="@color/app_body_black"
+                android:textSize="@dimen/app_body_size_2" />
+
+            <com.ideal.flyerteacafes.ui.view.LtctriLayout
+                android:id="@+id/weixin_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_item_height"
+                android:background="@drawable/frames_bottom_margin_left"
+                android:orientation="horizontal"
+                app:ctColor="@color/app_body_grey"
+                app:ctSize="@dimen/app_body_size_2"
+                app:ctText="已绑定"
+                app:ltColor="@color/app_black"
+                app:ltSize="@dimen/app_body_size_1"
+                app:ltText="微信"
+                app:ltWeight="1"
+                app:riSrc="@drawable/arrow_right" />
+
+            <com.ideal.flyerteacafes.ui.view.LtctriLayout
+                android:id="@+id/qq_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_item_height"
+                android:background="@drawable/frames_bottom_margin_left"
+                android:orientation="horizontal"
+                app:ctColor="@color/app_body_grey"
+                app:ctSize="@dimen/app_body_size_2"
+                app:ctText="已绑定"
+                app:ltColor="@color/app_black"
+                app:ltSize="@dimen/app_body_size_1"
+                app:ltText="QQ"
+                app:ltWeight="1"
+                app:riSrc="@drawable/arrow_right" />
+
+            <com.ideal.flyerteacafes.ui.view.LtctriLayout
+                android:id="@+id/weibo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_item_height"
+                android:background="@drawable/frames_bottom_margin_left"
+                android:orientation="horizontal"
+                app:ctColor="@color/app_body_grey"
+                app:ctSize="@dimen/app_body_size_2"
+                app:ctText="已绑定"
+                app:ltColor="@color/app_black"
+                app:ltSize="@dimen/app_body_size_1"
+                app:ltText="新浪微博"
+                app:ltWeight="1"
+                app:riSrc="@drawable/arrow_right" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:gravity="center_vertical"
+                android:text="系统设置"
+                android:textColor="@color/app_body_black"
+                android:textSize="@dimen/app_body_size_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frames_bottom_margin_left"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/listview_distance"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/setting_server_push"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_server_push"
+                        android:textColor="@color/app_body_black"
+                        android:textSize="@dimen/listview_title_size" />
+
+                    <TextView
+                        android:id="@+id/setting_server_push_explain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_server_push_explain"
+                        android:textColor="@color/app_body_grey"
+                        android:textSize="@dimen/listview_time_size" />
+                </LinearLayout>
+
+                <com.ideal.flyerteacafes.ui.controls.SwitchButton
+                    android:id="@+id/setting_server_push_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frames_bottom_margin_left"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/listview_distance"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/setting_picture_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_picture_mode"
+                        android:textColor="@color/app_body_black"
+                        android:textSize="@dimen/listview_title_size" />
+
+                    <TextView
+                        android:id="@+id/setting_picture_mode_explain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_picture_mode_explain"
+                        android:textColor="@color/app_body_grey"
+                        android:textSize="@dimen/listview_time_size" />
+                </LinearLayout>
+
+                <com.ideal.flyerteacafes.ui.controls.SwitchButton
+                    android:id="@+id/setting_picture_mode_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frames_bottom_margin_left"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/listview_distance"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="省流模式"
+                        android:textColor="@color/app_body_black"
+                        android:textSize="@dimen/listview_title_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3G/4G网络下不自动播放视频"
+                        android:textColor="@color/app_body_grey"
+                        android:textSize="@dimen/listview_time_size" />
+                </LinearLayout>
+
+                <com.ideal.flyerteacafes.ui.controls.SwitchButton
+                    android:id="@+id/setting_flow_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/setting_include_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frames_bottom_margin_left"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/listview_distance"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/setting_thread_streamline_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="帖子精简模式"
+                        android:textColor="@color/app_body_black"
+                        android:textSize="@dimen/listview_title_size" />
+
+                    <TextView
+                        android:id="@+id/setting_thread_streamline_mode_explain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="帖子列表将不显示图片和评论"
+                        android:textColor="@color/app_body_grey"
+                        android:textSize="@dimen/listview_time_size" />
+                </LinearLayout>
+
+
+                <com.ideal.flyerteacafes.ui.controls.SwitchButton
+                    android:id="@+id/setting_thread_streamline_mode_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/setting_include_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frames_bottom_margin_left"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/listview_distance"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/setting_privacy_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_private"
+                        android:textColor="@color/app_body_black"
+                        android:textSize="@dimen/listview_title_size" />
+
+                    <TextView
+                        android:id="@+id/setting_thread_streamline_mode_explain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开启此开关飞客将在附近的人中找到你"
+                        android:textColor="@color/app_body_grey"
+                        android:textSize="@dimen/listview_time_size" />
+                </LinearLayout>
+
+
+                <com.ideal.flyerteacafes.ui.controls.SwitchButton
+                    android:id="@+id/setting_privacy_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp" />
+
+
+            </LinearLayout>
+
+            <com.ideal.flyerteacafes.ui.view.LtctriLayout
+                android:id="@+id/clear_cache_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_item_height"
+                android:background="@drawable/frames_bottom_margin_left"
+                android:orientation="horizontal"
+                app:ctColor="@color/app_body_grey"
+                app:ctSize="@dimen/app_body_size_2"
+                app:ltColor="@color/app_black"
+                app:ltSize="@dimen/app_body_size_1"
+                app:ltText="清除缓存"
+                app:ltWeight="1"
+                app:riSrc="@drawable/arrow_right" />
+
+
+            <com.ideal.flyerteacafes.ui.view.LtctriLayout
+                android:id="@+id/business_cooperation_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_item_height"
+                android:background="@drawable/frames_bottom_margin_left"
+                android:orientation="horizontal"
+                app:ctColor="@color/app_body_grey"
+                app:ctSize="@dimen/app_body_size_2"
+                app:ltColor="@color/app_black"
+                app:ltSize="@dimen/app_body_size_1"
+                app:ltText="商务合作"
+                app:ltWeight="1"
+                app:riSrc="@drawable/arrow_right" />
+
+            <com.ideal.flyerteacafes.ui.view.LtctriLayout
+                android:id="@+id/about_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_item_height"
+                android:background="@drawable/frames_bottom_margin_left"
+                android:orientation="horizontal"
+                app:ltColor="@color/app_black"
+                app:ltSize="@dimen/app_body_size_1"
+                app:ltText="关于我们"
+                app:ltWeight="1"
+                app:riSrc="@drawable/arrow_right" />
+
+
+            <TextView
+                android:id="@+id/mrl_loginout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/red_delete_btn"
+                android:gravity="center"
+                android:text="@string/userinfo_loginout"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_bg_title_size" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

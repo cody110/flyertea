@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/search_tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <View
+        android:id="@+id/item_search_tag_interval"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/app_bg_grey" />
+
+
+    <com.ideal.flyerteacafes.ui.layout.SearchScreenLayout
+        android:id="@+id/header_item_search_screen"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/frames_bottom"/>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/library/CalendarPicker/CalendarPicker.iml" filepath="$PROJECT_DIR$/library/CalendarPicker/CalendarPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flyertea.iml" filepath="$PROJECT_DIR$/flyertea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flyerteaCafes/flyerteaCafes.iml" filepath="$PROJECT_DIR$/flyerteaCafes/flyerteaCafes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-java/ijkplayer-java.iml" filepath="$PROJECT_DIR$/ijkplayer-java/ijkplayer-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ptr-lib/ptr-lib.iml" filepath="$PROJECT_DIR$/ptr-lib/ptr-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/social_sdk/social_sdk.iml" filepath="$PROJECT_DIR$/social_sdk/social_sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipeMenuListViewLibrary/swipeMenuListViewLibrary.iml" filepath="$PROJECT_DIR$/swipeMenuListViewLibrary/swipeMenuListViewLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tusdk/tusdk.iml" filepath="$PROJECT_DIR$/tusdk/tusdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/upplayer/upplayer.iml" filepath="$PROJECT_DIR$/upplayer/upplayer.iml" />
+    </modules>
+  </component>
+</project>

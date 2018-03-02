@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view">
+
+
+    <com.ideal.flyerteacafes.ui.controls.PullToRefreshView
+        android:id="@+id/fragment_refreshview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/fragment_refreshview_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.ideal.flyerteacafes.ui.controls.PullToRefreshView>
+
+    <com.ideal.flyerteacafes.ui.layout.SearchScreenLayout
+        android:id="@+id/fm_item_serach_screen"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/frames_bottom"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/remind_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/frames_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app_commen_margin"
+            android:layout_weight="1"
+            android:text="没找到想要的内容"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/btn_see_raiders"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:background="@drawable/blue_frame"
+            android:gravity="center"
+            android:text="看攻略"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/btn_questions_to"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/blue_frame"
+            android:gravity="center"
+            android:text="去提问"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+</RelativeLayout>

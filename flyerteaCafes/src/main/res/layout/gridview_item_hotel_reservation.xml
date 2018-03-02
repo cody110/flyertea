@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/hotel_reservation_item_bg"
+    android:gravity="center_vertical">
+
+    <com.ideal.flyerteacafes.ui.controls.RoundImageView
+        android:id="@+id/gridview_hotel_reservation_icon"
+        android:layout_width="@dimen/face_size"
+        android:layout_height="@dimen/face_size"
+        android:src="@drawable/ic_launcher"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/gridview_hotel_reservation_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_body_black"
+        android:textSize="@dimen/listview_body_size" />
+
+</LinearLayout>

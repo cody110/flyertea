@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_1">
+
+    <!-- title layout -->
+
+    <RelativeLayout
+        android:id="@+id/lsq_title_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lsq_title_height"
+        android:background="@color/lsq_color_white">
+
+        <ImageView
+            android:id="@+id/lsq_back"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/left_back" />
+
+        <TextView
+            android:id="@+id/lsq_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="滤镜"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/lsq_next"
+            android:layout_width="56dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/app_commen_margin"
+            android:background="@drawable/blue_frame"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lsq_cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/lsq_actButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/lsq_style_default_crop_btn_record"
+            android:clickable="false" />
+    </RelativeLayout>
+
+
+    <!-- 滤镜列表、滤镜调节栏-->
+    <include
+        android:id="@+id/lsq_filter_layout"
+        layout="@layout/movie_editor_filter_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

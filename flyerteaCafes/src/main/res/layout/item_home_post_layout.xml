@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/app_commen_margin"
+    android:paddingRight="@dimen/app_commen_margin">
+
+
+    <com.ideal.flyerteacafes.ui.controls.FlyRoundImageView
+        android:id="@+id/item_post_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_image_top_height"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/post_def"
+        app:borderRadius="@dimen/home_pager_radius"
+        app:type="round" />
+
+
+    <TextView
+        android:id="@+id/item_post_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/app_string_up_down_safe"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/home_title_color"
+        android:textSize="@dimen/app_body_size_1"
+        android:textStyle="bold" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_xi"
+        android:background="@color/app_line_color" />
+
+
+</LinearLayout>

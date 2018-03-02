@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/popupwindow_postdetails_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/post_pop_btn_bg"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="提示"
+                android:textColor="@color/app_body_grey"
+                android:textSize="@dimen/app_body_size_2" />
+
+
+            <View
+                android:id="@+id/popupwindow_postdetails_bottom_flower_delete_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_xi"
+                android:background="@color/app_line_color"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/popupwindow_postdetails_bottom_delete_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="删除"
+                android:textColor="@color/app_bg_title"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/popupwindow_postdetails_bottom_canlce_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/post_pop_btn_bg"
+            android:text="@string/cancel"
+            android:textColor="@color/app_bg_title" />
+    </LinearLayout>
+
+</RelativeLayout>

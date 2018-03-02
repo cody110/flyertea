@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>帖子详情</title>
+    <meta name="viewport"
+          content="initial-scale=1,width=device-width,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <script type="text/javascript" src="file:///android_asset/thread/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="file:///android_asset/thread/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="file:///android_asset/thread/flyertea.css">
+</head>
+<body>
+<div class="page">
+
+    <div id="title_height">
+
+    </div>
+
+    <div class="comment-detail">
+        <div class="comment-header" style="display:<!-- ARTICLE IS_COMMENT -->;">
+            <span><!-- ARTICLE TITLE --> <!-- ARTICLE IMG --></span>
+        </div>
+
+        <div class="comment-detail-main" style="display:<!-- ARTICLE IS_COMMENT -->;">
+
+
+            <!--正常帖 用户信息-->
+            <div class="comment-author single-line" style="display:<!-- ARTICLE NORMAL -->;">
+                        <span class="author-avater">
+                            <img id="<!-- AUTHOR AVATAR ID -->" class="avater-img"
+                                 src="<!-- ARTICLE AUHTOR AVATAR -->"
+                                 onerror="this.src='file:///android_asset/def_face.png';">
+                            <img class="gender-mark" src="<!-- ARTICLE AUHTOR GENDER -->">
+                        </span>
+
+                <div class="author-name">
+                    <h4><!-- ARTICLE AUTHOR --><img src="file:///android_asset/thread/img/vip.png"
+                                                    style="display:<!-- ARTICLE HAS_SM -->;">
+                        <span><!-- ARTICLE LEVEL --></span><span class="fr"><!-- ARTICLE POST DATE --></span>
+                    </h4>
+                </div>
+            </div>
+
+            <!--专业帖 用户信息-->
+            <div class="comment-author" style="display:<!-- ARTICLE MAJOR -->;">
+                        <span class="author-avater">
+                            <img class="avater-img" src="<!-- ARTICLE AUHTOR AVATAR -->"
+                                 onerror="this.src='file:///android_asset/def_face.png';">
+                            <img class="gender-mark" src="<!-- ARTICLE AUHTOR GENDER -->">
+                        </span>
+                <div class="author-name">
+                    <h4><!-- ARTICLE AUTHOR --><img src="file:///android_asset/thread/img/vip.png"
+                                                    style="display:<!-- ARTICLE HAS_SM -->;"></h4>
+                    <p><span><!-- ARTICLE LEVEL --></span><span><!-- ARTICLE POST DATE --></span>
+                    </p>
+                    <span id="friend" class="fr anti-btn btn-blue"
+                          style="display:<!-- ARTICLE IS_FRIEND -->;"><!--ARTICLE ISFRIEND--></span>
+                </div>
+
+            </div>
+
+
+            <div class="comment-content-special">
+                <!-- ARTICLE CONTENT -->
+            </div>
+
+            <!-- TAG -->
+
+            <p class="locate" style="display:<!-- ARTICLE_IS_SHOW_LOCATION -->;"><img
+                    src="file:///android_asset/thread/img/dingwei.png"><!-- ARTICLE LOCATION --></p>
+
+            <!-- TOPIC -->
+
+        </div>
+
+
+        <div id="details-line"></div>
+
+
+        <!-- WENDA-REMIND -->
+
+
+        <div class="comment-reply" id="comment-list">
+            <!-- FIRST LOAD COMMENT -->
+        </div>
+
+        <div class="ad-img">
+            <!-- ADVERT HTML -->
+        </div>
+
+    </div>
+
+
+</div>
+
+</div>
+
+<script type="text/javascript">
+window.onload = function() {
+   bindClickEvent();
+}
+
+
+<!--正序-->
+function showReplyTimeDown(){
+    <!--var up= document.getElementById("reply-time-up");-->
+    <!--var down=document.getElementById("reply-time-down");-->
+
+    <!--$(down).addClass("select");-->
+    <!--$(up).siblings().removeClass("select");-->
+}
+
+<!--倒序-->
+function showReplyTimeUp(){
+    var down=document.getElementById("reply-time-down");
+    var up= document.getElementById("reply-time-up");
+
+    $(down).siblings().removeClass("select");
+    $(up).addClass("select");
+
+}
+
+function removeSelectClass(){
+    var down=document.getElementById("reply-time-down");
+    var up= document.getElementById("reply-time-up");
+
+    $(up).siblings().removeClass("select");
+    $(down).siblings().removeClass("select");
+}
+
+
+<!--隐藏评论-->
+function hiddenComment(){
+    var layout= document.getElementById("comment-list");
+    layout.style.display="none";
+}
+
+<!--追加评论-->
+function appendComment (comment)
+{
+	var obj=decodeURIComponent(comment.replace(/\+/g, '%20'));
+    var layout= document.getElementById("comment-list");
+    layout.innerHTML=layout.innerHTML+obj;
+
+
+    <!--一张图片固定高度为1/3-->
+    $(".img-img").height($(".img-img").width()/3);
+
+
+    unbindClickEvent();
+    bindClickEvent();
+}
+
+<!--重新替换评论-->
+function replaceComment(comment){
+    var obj=decodeURIComponent(comment.replace(/\+/g, '%20'));
+    var layout= document.getElementById("comment-list");
+
+    layout.innerHTML=obj;
+
+    <!--一张图片固定高度为1/3-->
+    $(".img-img").height($(".img-img").width()/3);
+
+    unbindClickEvent();
+    bindClickEvent();
+}
+
+
+<!--送花-->
+function updateFlower(index,number){
+    var obj = document.getElementById("flowerId"+index).childNodes;
+    for(var i=0;i<obj.length;i++)
+     {
+      if(obj[i].nodeName == 'IMG')
+     	{
+      		var getObj = obj[i];
+     		getObj.src="file:///android_asset/thread/img/flower-light.png";
+     	}else{
+            var getObj = obj[i];
+     		getObj.innerHTML = number;
+     	}
+     }
+}
+
+
+<!--滚动到指定评论-->
+function scollToIndex(index){
+    <!--var mTop = $('.comment-item')[index].offsetTop;-->
+    <!--var sTop = screen.availHeight;-->
+    <!--var result = mTop + sTop;-->
+
+    <!--window.android.scollToLocation(result);-->
+
+                var floor=$('.comment-item')[index];
+                 $('html, body').animate({
+                    scrollTop: floor.offset().top
+                  }, 500);
+
+
+}
+
+function scrollToSpecifiedFloor(floor){
+
+    $('html, body').animate({
+        scrollTop: $(floor).offset().top
+    }, 500);
+}
+
+
+function showDaan(index){
+
+    var obj = document.getElementById("daan"+index);
+    obj.style.display="block";
+    hintWendaRemind();
+}
+
+function hintDaan(index){
+    var obj = document.getElementById("daan"+index);
+    obj.style.display="none";
+    showWendaRemind();
+}
+
+function showHuifu(index){
+
+    var obj = document.getElementById("huifu"+index);
+    obj.style.display="block";
+}
+
+function hintHuifu(index){
+    var obj = document.getElementById("huifu"+index);
+    obj.style.display="none";
+}
+
+function showWendaRemind(){
+
+    var obj = document.getElementById("wenda-remind");
+    obj.style.display="block";
+}
+
+function hintWendaRemind(){
+    var obj = document.getElementById("wenda-remind");
+    obj.style.display="none";
+}
+
+
+<!--绑定点击事件-->>
+function bindClickEvent()
+{
+    <!--论坛板块-->
+    $("#topic-item").click(function(event) {
+        window.android.clickTopic();
+    });
+    <!--论坛板块-->
+    $("#article_forum").click(function(event) {
+        window.android.clickToForum();
+    });
+
+     <!--加好友点击-->
+    $("#friend").click(function(event) {
+        window.android.clickAddFriend();
+    });
+
+    <!--图片点击-->
+     $(".contentImage").click(function(event){
+        var index = $(this).attr('index');
+        window.android.clickContentImage(index);
+    });
+
+    <!--评论项点击-->
+    $(".comment-item").click(function(){
+        if (event.target.nodeName == 'IMG') {
+            return;
+        }
+
+        if (event.target.nodeName == 'A') {
+            return;
+        }
+
+        var $this = $(this);
+        if($this.hasClass('sendFlower')){
+           return;
+        }
+        var index = $this.attr('index');
+       window.android.clickCommentLi(index);
+    });
+
+    <!--送花点击-->
+    $(".sendFlower").click(function(event) {
+    var index = $(this).attr('index');
+    	window.android.clickSendFLower(index);
+    });
+
+    <!--作者头像点击-->
+    $(".avater-img").click(function(event) {
+        var index = $(this).attr('index');
+         window.android.clickOnAvatar(index);
+    });
+
+
+    <!--倒序-->
+    $("#reply-time-up").click(function(event) {
+         window.android.clickCommentUp();
+    });
+
+    <!--正序-->
+    $("#reply-time-down").click(function(event) {
+         window.android.clickCommentDown();
+    });
+
+
+    <!--more更多点击-->
+    $(".fr_more").click(function(event) {
+        var index = $(this).attr('index');
+         window.android.clickMore(index);
+    });
+
+
+    <!--TAG more更多点击-->
+    $("#tag-item-value").click(function(event) {
+         window.android.clickTag();
+    });
+
+     <!--TAG more更多点击-->
+    $("#tag-item-more").click(function(event) {
+         window.android.clickTagMore();
+    });
+
+    <!--videoplay点击-->
+    $(".videoPlay").click(function(event) {
+         var id=$(this).attr("id");
+         window.android.clickPlay(id);
+    });
+
+}
+
+<!--解绑点击事件-->
+function unbindClickEvent()
+{
+    $("#article_forum").unbind('click');
+    $("#friend").unbind('click');
+    $(".contentImage").unbind('click');
+    $(".comment-item").unbind('click');
+    $(".sendFlower").unbind('click');
+    $(".avater-img").unbind('click');
+    $("#reply-time-up").unbind('click');
+    $("#reply-time-down").unbind('click');
+    $(".fr_more").unbind('click');
+    $("#tag-item-more").unbind('click');
+    $("#tag-item-value").unbind('click');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

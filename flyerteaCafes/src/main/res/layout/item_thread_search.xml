@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/app_commen_margin"
+    android:paddingRight="@dimen/app_commen_margin"
+    android:paddingTop="8dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/item_thread_search_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="三里屯周几酒店入住体验"
+        android:textColor="@color/app_body_black"
+        android:textSize="@dimen/app_body_size_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_thread_search_forumname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IHG"
+            android:textColor="@color/app_body_grey"
+            android:textSize="@dimen/app_body_size_3" />
+
+        <TextView
+            android:id="@+id/item_thread_search_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="15分钟钱"
+            android:textColor="@color/app_body_grey"
+            android:textSize="@dimen/app_body_size_3" />
+
+        <TextView
+            android:id="@+id/item_thread_search_flower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_body_grey"
+            android:textSize="@dimen/app_body_size_4" />
+
+        <TextView
+            android:id="@+id/item_thread_search_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="23ping"
+            android:textColor="@color/app_body_grey"
+            android:textSize="@dimen/app_body_size_4" />
+    </LinearLayout>
+
+</LinearLayout>

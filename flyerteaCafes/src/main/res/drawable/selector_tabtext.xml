@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><!-- viewpager 上面的 indicator 字体颜色 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:color="@color/app_bg_title" />
+    <item android:state_pressed="true" android:color="@color/app_bg_title" />
+    <item android:state_focused="true" android:color="@color/app_bg_title" />
+    <item android:color="@color/app_body_grey" />
+</selector> 

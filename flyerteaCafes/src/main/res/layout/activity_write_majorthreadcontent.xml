@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        android:background="@color/bg_toolbar">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_left"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:src="@drawable/left_back" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/write_major_menu_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/write_major_send"
+                android:layout_width="56dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/light_grey_frame"
+                android:gravity="center"
+                android:text="发表"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/app_body_size_2" />
+
+
+            <ImageView
+                android:id="@+id/write_major_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:padding="6dp"
+                android:src="@drawable/icon_more" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/write_major_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:padding="6dp"
+            android:text="完成"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/app_body_size_2"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_line_header_view" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/write_thread_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="94dp"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:hint="起个引人关注的标题哦~"
+                    android:lineSpacingExtra="10dp"
+                    android:maxLength="50"
+                    android:padding="@dimen/app_commen_margin"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/write_thread_hint"
+                    android:textSize="@dimen/font_size_22"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@drawable/line_margin_left_right" />
+
+                <EditText
+                    android:id="@+id/write_thread_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="分享观点，表达自我，20字以上的内容更容易获得飞客们的关注哦~"
+                    android:lineSpacingMultiplier="1.2"
+                    android:maxLength="1000"
+                    android:padding="@dimen/app_commen_pading"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/write_thread_hint"
+                    android:textSize="@dimen/font_size_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@drawable/line_margin_left_right" />
+
+
+                <ListView
+                    android:id="@+id/thread_content_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:divider="@drawable/line_margin_left_right" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/upload_img_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/blue_solid_fillet_10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/upload_img_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="2dp"
+                android:text="图片上传中..."
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/app_commen_margin"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/write_thread_topic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/app_commen_margin"
+                android:background="@drawable/location_btn"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="话题"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/font_size_16"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="@drawable/location_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/write_thread_location_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/location_grey"
+                    android:hint="你在哪里？"
+                    android:maxWidth="204dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_blue"
+                    android:textColorHint="@color/write_thread_hint"
+                    android:textSize="@dimen/font_size_16" />
+
+
+                <View
+                    android:id="@+id/del_location_btn_line"
+                    android:layout_width="1px"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@color/app_line_color"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/del_location_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/close_orange"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_xi"
+        android:background="@color/app_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/choose_look_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:src="@drawable/reply_face" />
+
+        <ImageView
+            android:id="@+id/add_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:src="@drawable/reply_photos" />
+
+        <ImageView
+            android:id="@+id/add_text"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:src="@drawable/add_text_img" />
+
+
+        <ImageView
+            android:id="@+id/video_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:src="@drawable/add_video" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/chat_biaoqing_layout"
+        android:name="com.ideal.flyerteacafes.ui.fragment.page.LookFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

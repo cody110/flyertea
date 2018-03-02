@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg_grey"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <include
+        layout="@layout/include_left_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/listview_distance">
+
+        <TextView
+            android:id="@+id/creditcard_query_results_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/listview_time_size"
+            android:textColor="@color/app_body_grey" />
+    </LinearLayout>
+
+
+    <com.ideal.flyerteacafes.ui.controls.PullToRefreshView
+        android:id="@+id/creditcard_result_refreshview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/creditcard_query_results_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/app_bg_grey"
+            android:dividerHeight="10dp"></ListView>
+
+    </com.ideal.flyerteacafes.ui.controls.PullToRefreshView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/creditcard_shuoming_text"
+        android:textSize="@dimen/creditcard_shuoming_text"
+        android:textColor="@color/creditcard_shuoming" />
+
+</LinearLayout>

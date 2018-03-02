@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/task_tabstrip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:background="@color/app_bg_title">
+
+        <com.ideal.flyerteacafes.ui.view.PagerSlidingTabStrip
+            android:id="@+id/task_tabstrip"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/include_item_height"
+            android:layout_centerInParent="true"
+            app:pstsIndicatorColor="@color/white"
+            app:pstsPaddingMiddle="false"
+            app:pstsShouldExpand="false"
+            app:pstsTabPaddingLeftRight="14dp"
+            app:pstsTextColorSelected="@color/white"
+            app:pstsTextColorUnSelected="@color/title_no_select" />
+
+
+        <ImageView
+            android:id="@+id/fm_community_home_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/icon_search" />
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fm_community_home_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

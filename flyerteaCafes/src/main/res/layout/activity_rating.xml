@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        android:id="@+id/toolbar"
+        style="@style/toolbar_white" />
+
+    <TextView
+        android:id="@+id/ratingbar_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="点击星星评分"
+        android:textColor="@color/app_hint_text_color"
+        android:textSize="@dimen/app_body_size_1" />
+
+
+    <!--<RatingBar-->
+    <!--android:id="@+id/ratingbar"-->
+    <!--style="@style/foodRatingBar"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:isIndicator="false"-->
+    <!--android:numStars="5" />-->
+
+
+    <com.ideal.flyerteacafes.ui.controls.StarBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display"
+        android:layout_marginTop="12dp"
+        app:starCount="5"
+        app:starDistance="15dp"
+        app:starEmpty="@drawable/star_empty"
+        app:starFill="@drawable/ratingstars"
+        app:starSize="32dp" />
+
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:text="为酒店打标签，为更多飞客入住提供参考"
+        android:textColor="@color/app_grey"
+        android:textSize="@dimen/app_body_size_2"
+        android:visibility="invisible" />
+
+
+    <GridView
+        android:id="@+id/flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+
+
+    <TextView
+        android:id="@+id/commit_btn"
+        style="@style/button_1"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/tag_commit_btn"
+        android:text="提交" />
+
+    <TextView
+        android:id="@+id/skip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="跳过"
+        android:textColor="@color/home_not_selected"
+        android:textSize="@dimen/app_body_size_1" />
+
+</LinearLayout>

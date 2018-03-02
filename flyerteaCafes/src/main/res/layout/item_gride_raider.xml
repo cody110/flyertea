@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_gride_raider"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/item_raider_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_gride_raider"
+        android:lines="2"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/item_raider_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_raider_des"
+        android:layout_alignRight="@+id/item_gride_raider"
+        android:layout_marginBottom="5dp" />
+
+</RelativeLayout>

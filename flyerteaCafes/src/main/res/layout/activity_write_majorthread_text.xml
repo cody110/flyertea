@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        app:leftImgSrc="@drawable/left_back"
+        app:title_bar="添加文字"
+        app:rightText="完成"/>
+
+    <EditText
+        android:id="@+id/content_edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/app_body_size_1"
+        android:textColorHint="@color/app_body_grey"
+        android:textColor="@color/app_body_black"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="说点想说的..."
+        android:layout_margin="@dimen/app_commen_margin"
+        android:maxLength="1000"/>
+
+    <TextView
+        android:id="@+id/max_text_size_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_margin="@dimen/app_commen_margin"
+        android:text="0/1000"
+        android:maxLength="1000"
+        android:visibility="gone"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/choose_look_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reply_face"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/chat_biaoqing_layout"
+        android:name="com.ideal.flyerteacafes.ui.fragment.page.LookFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

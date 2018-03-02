@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancle_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/app_body_grey"
+            android:textSize="@dimen/app_body_size_2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="选择刷卡日期"
+            android:textColor="@color/app_body_black"
+            android:textSize="@dimen/app_bg_title_size" />
+
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/app_bg_title"
+            android:textSize="@dimen/app_bg_title_size" />
+    </LinearLayout>
+
+    <include layout="@layout/include_line_xi_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ideal.flyerteacafes.ui.wheelview.WheelView
+            android:id="@+id/pop_three_level_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.ideal.flyerteacafes.ui.wheelview.WheelView
+            android:id="@+id/pop_three_level_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.ideal.flyerteacafes.ui.wheelview.WheelView
+            android:id="@+id/pop_three_level_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/progress_dialog_bg"
+    android:gravity="center"
+    android:minWidth="300dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="视频上传中，请稍后..."
+        android:textColor="@color/lsq_actionsheet_mask_bg"
+        android:textSize="@dimen/lsq_font_size_30" />
+
+    <com.flyer.tusdk.views.MySeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:maxHeight="3dp"
+        android:minHeight="3dp"
+        android:progressDrawable="@drawable/progress_holo_light"
+        android:thumb="@drawable/detail_icon_schedule_ball" />
+
+    <TextView
+        android:id="@+id/cancle_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="取消" />
+
+</LinearLayout>

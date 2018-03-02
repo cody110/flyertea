@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 订阅栏目  没订阅   gridview 背景 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- solid中定义的颜色值需要包含alpha值 
+    stroke可以定义边框的颜色，width为边框的宽度，dashWidth为画笔的宽度，dashGap为画笔的间距
+
+（dashGap为0，则边框为实心的边线）
+
+corners定义四角圆弧的半径。-->
+
+    <solid android:color="#DFB649" />
+
+    <stroke
+        android:width="1dp"
+        android:color="#DFB649"
+        android:dashGap="0dp" />
+
+    <corners android:radius="2dp" />
+
+    <size
+        android:height="5dp"/>
+
+</shape>

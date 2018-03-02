@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        app:leftImgSrc="@drawable/left_back"
+        app:title_bar="更新任务进度" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/app_commen_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/include_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/swingcard_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="0.00"
+                android:textColor="@color/app_black"
+                android:textSize="20dp"
+                android:inputType="numberDecimal"/>
+
+            <ImageView
+                android:id="@+id/swingcard_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/app_commen_margin"
+                android:src="@drawable/task_camera" />
+        </LinearLayout>
+
+        <include layout="@layout/include_line_xi_view" />
+
+        <LinearLayout
+            android:id="@+id/swingcard_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/include_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="刷卡日期"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/app_bg_title_size" />
+
+            <TextView
+                android:id="@+id/swingcard_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请选择"
+                android:textColor="@color/app_body_grey"
+                android:textColorHint="@color/app_body_grey"
+                android:textSize="@dimen/app_body_size_2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/app_commen_margin"
+                android:src="@drawable/right_arrow" />
+        </LinearLayout>
+
+        <include layout="@layout/include_line_xi_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/include_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="消费商户"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/app_bg_title_size" />
+
+            <EditText
+                android:id="@+id/swingcard_shop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="选填"
+                android:textColor="@color/app_body_grey"
+                android:textSize="@dimen/app_body_size_2" />
+
+        </LinearLayout>
+
+        <include layout="@layout/include_line_xi_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/include_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="MCC"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/app_bg_title_size" />
+
+            <EditText
+                android:id="@+id/swingcard_mcc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="选填"
+                android:textColor="@color/app_body_grey"
+                android:textSize="@dimen/app_body_size_2"
+                android:inputType="number"
+                android:maxLength="4"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btn_ok"
+        style="@style/button_1"
+        android:layout_marginTop="30dp"
+        android:text="记一笔" />
+
+</LinearLayout>

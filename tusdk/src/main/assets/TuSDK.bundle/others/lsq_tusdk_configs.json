@@ -1,0 +1,39 @@
+{
+    "filterGroups":[
+        {
+            "file":"lsq_filter_YouPaiYun001_89.gfilter",
+            "name":"lsq_filter_group_YouPaiYun001",
+            "default_filter_id":626,
+            "type":0,
+            "filters":[
+                {
+                    "id":626,
+                    "name":"lsq_filter_Original08",
+                    "color":"#ffffff",
+                    "args":{
+                        "smoothing":0.75,
+                        "mixied":1
+                    }
+                }
+            ]
+        }
+    ],
+    "stickerCategories":[
+        {
+            "id":1,
+            "name":"\u8d34\u7eb8"
+        },
+        {
+            "id":2,
+            "name":"\u5fc3\u60c5"
+        },
+        {
+            "id":3,
+            "name":"\u6c34\u5370"
+        }
+    ],
+    "stickerGroups":[
+        
+    ],
+    "master":"8U+gZQffSLcHoJM\/NLeXcwHcUAUimFBBjoWePpjT2z+KuPnBV0wyvVl\/34MV2SEZU+gfqF2sAaU7T4XDxbKGRtfIK7NUT6zj3bNg5sWfhjBxVjb8aKzlcjr6zcO5qeiqol7B9V8nfvnUxQhwaEBUY3DNVK4v+575S4NwG805uWZXL8JjvwSV5IlRBO7ohZPxiBacG9E0XO4r9Biz+KA83hhvB5LigfqDJnId6w8YI4Ai63yPUVBC3TNWw8NG89jtccurXDJTl3SUq6fo4puCvNWelTW3wF3k6pfO6bz7ueuvwEl\/5Rfhf4S7FWCO5jgxMd4UpzypQCQ7eAdBfFabE9hlVnIW4MWiWzOtXHDyhEcqLGWH34uSf8tXpC7Jgztabcfhr1vPMz0LW3SayAA1xiNtnYbQr3f2HufL\/d6IqqYLwVA4kHf5FoxaBSr57OTQLHUcBSAZ29lbOiM730hyQBvOnDiEW2sfUXlEybto2DkkNoY\/ztk62BAbqzGitYeZbuOaM7FUfViCVtOCzuUGRGCy4Ycj1eKvPZgIJtpYuqFsE+GGDwzf\/n\/cAqjOpEsskr8inwQY1j4etGFYbT207VBlWtZBAC92bi5p2BTXpUEPjmOQQqWFDaQrMNroqAXkSapatk6xCaap2KGk1Xwn9deraQzH7b65gE0x5yK3SOnTOgnIfLFw3\/rPVhYAnG9KOlcavM+vO34845rTZcGCtoNf8mhO8whKM9dsbmJqRncB\/rHgGefY8NUY89ij26pmYR+Jzu4n7P9ClBcWiXy4fuweCzXQp5j0l3d3lJ85hYEE7GTvB8Ryq1m28NrHCcKh5adF01foNleRDFxuBwYVC77tjkO5\/GCqdNHk8YDo7FRwCsKkv\/VDYsHaR+1Dnkt6y2gyV6fcHnnxuQdmBG4\/NWnXPtpkRD1q3iR8Mm3X1X1WU2+xaY5vbtxufPxxcnQcO1m\/y1n78Ri\/s63GPfZaqboatEfrvUXIQ724cFcdezlxG21k2pWsrib\/y31T9c+aDFA71BFE16"
+}

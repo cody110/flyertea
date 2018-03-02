@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hotkey_search"
+        android:textSize="@dimen/app_body_size"
+        android:textColor="@color/app_bg_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <com.ideal.flyerteacafes.ui.controls.XCFlowLayout
+        android:id="@+id/view_search_hotkey_flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.ideal.flyerteacafes.ui.controls.XCFlowLayout>
+
+    <ListView
+        android:id="@+id/view_search_hotkey_history_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

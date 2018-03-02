@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        style="@style/toolbar_white"
+        app:title_bar="新手指引" />
+
+    <com.ideal.flyerteacafes.ui.view.PagerSlidingTabStrip
+        android:id="@+id/tabstrip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        app:pstsIndicatorColor="@color/black"
+        app:pstsPaddingMiddle="false"
+        app:pstsShouldExpand="false"
+        app:pstsTabPaddingLeftRight="14dp"
+        app:pstsTextColorSelected="@color/black"
+        app:pstsTextColorUnSelected="@color/app_body_grey" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tabstrip_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/task_tabstrip_layout"
+        android:layout_weight="1" />
+
+
+
+</LinearLayout>

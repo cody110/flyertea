@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/item_header_community_sub_type_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header_community_sub_forum_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_bg_title"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.ideal.flyerteacafes.ui.controls.FlyRoundImageView
+                    android:id="@+id/community_sub_icon_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/subforum_icon_bg"
+                    app:borderRadius="5dp"
+                    app:type="round" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/community_sub_fname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/app_body_size_1" />
+
+                    <TextView
+                        android:id="@+id/community_sub_info_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/app_body_size_2" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/community_sub_add_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/app_commen_margin"
+                    android:background="@drawable/attention_btn_bg"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="@dimen/app_string_left_right_safe"
+                    android:paddingRight="@dimen/app_string_left_right_safe"
+                    android:paddingTop="5dp"
+                    android:text="关注"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_body_size_2" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/community_sub_top_thread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_xi"
+            android:background="@color/app_line_color" />
+
+        <LinearLayout
+            android:id="@+id/community_sub_more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_column_height"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/community_sub_more_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多置顶"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/app_body_size_3" />
+
+            <ImageView
+                android:id="@+id/community_sub_more_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:rotation="180"
+                android:src="@drawable/icon_load_more" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@color/app_bg_grey" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_community_sub_type_layout" />
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pop_dialog">
+
+        <TextView
+            android:id="@+id/btn_live_share"
+            android:layout_above="@+id/pop_live_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_body_size"
+            android:layout_weight="1"
+            android:background="@drawable/live_report_selector"
+            android:text="@string/live_share"
+            android:gravity="center"/>
+        <View
+            android:id="@+id/pop_live_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/btn_live_report"
+            android:layout_below="@+id/pop_live_divider"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/live_report_selector"
+            android:gravity="center"
+            android:textSize="@dimen/app_body_size"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="@string/live_report"/>
+
+    <View
+        android:id="@+id/pop_live_divider_two"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/btn_live_delete"
+        android:layout_below="@+id/pop_live_divider"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/live_report_selector"
+        android:gravity="center"
+        android:textSize="@dimen/app_body_size"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:text="@string/delete"
+        android:visibility="gone"/>
+
+</LinearLayout>

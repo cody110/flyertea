@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center_vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/list_search_history_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/search_grey"
+        android:drawablePadding="5dp"
+        android:textColor="@color/app_body_grey"
+        android:textSize="@dimen/app_body_size_1"/>
+
+    <TextView
+        android:id="@+id/list_search_history_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/app_body_grey" />
+
+</RelativeLayout>

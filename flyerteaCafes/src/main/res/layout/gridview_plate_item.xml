@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mtv_gridview_plate_type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/community_plate_btn_normal"
+    android:gravity="center"
+    android:padding="@dimen/app_commen_pading"
+    android:textColor="@color/app_body_black"
+    android:textSize="@dimen/app_body_size_2">
+
+</TextView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.ideal.flyerteacafes.ui.controls.RoundImageView
+            android:id="@+id/nearby_head"
+            android:layout_width="@dimen/face_size"
+            android:layout_height="@dimen/face_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/def_face" />
+
+        <TextView
+            android:id="@+id/nearby_name"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/nearby_head"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/nearby_friends_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/nearby_name"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/nearby_name"
+            android:src="@drawable/boy_flag" />
+
+        <TextView
+            android:id="@+id/nearby_friends_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/nearby_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/nearby_friends_sex" />
+
+
+        <TextView
+            android:id="@+id/nearby_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nearby_name"
+            android:layout_below="@+id/nearby_name"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/app_body_grey" />
+
+        <TextView
+            android:id="@+id/nearby_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/app_body_grey"
+            android:textSize="@dimen/listview_time_size" />
+
+        <TextView
+            android:id="@+id/nearby_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/nearby_time"
+            android:textColor="@color/app_body_grey"
+            android:textSize="@dimen/listview_time_size" />
+
+        <View
+            android:id="@+id/nearby_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@+id/nearby_signature"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_line_color" />
+    </RelativeLayout>
+</LinearLayout>

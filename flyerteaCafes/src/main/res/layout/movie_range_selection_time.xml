@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/movie_range_selection_time"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/lsq__space_20"
+        android:layout_marginLeft="@dimen/lsq__space_20"
+        android:layout_marginRight="@dimen/lsq__space_20"
+        android:layout_marginTop="@dimen/lsq__space_20"
+        android:orientation="vertical">
+
+        <com.flyer.tusdk.views.MovieRangeSelectionBar
+            android:id="@+id/lsq_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lsq_seekbar_height"
+            android:layout_marginBottom="@dimen/lsq__space_10" />
+
+        <RelativeLayout
+            android:id="@+id/lsq_time_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lsq__space_5">
+
+            <TextView
+                android:id="@+id/lsq_left_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/lsq_text_time_tv"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/lsq_play_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/lsq_text_time_tv"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/lsq_right_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/lsq_text_time_tv"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/font_size_12" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

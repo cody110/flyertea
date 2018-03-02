@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/listview_distance">
+
+        <TextView
+            android:id="@+id/query_results_bank"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/app_body_black"
+            android:textSize="@dimen/listview_time_size" />
+
+        <TextView
+            android:id="@+id/query_results_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/app_body_grey"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/query_results_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/query_results_time"
+            android:textColor="@color/app_body_grey"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/listview_distance"
+        android:layout_marginRight="@dimen/listview_distance"
+        android:layout_marginBottom="@dimen/listview_distance">
+
+        <TextView
+            android:id="@+id/query_results_pay_type"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/app_body_black"
+            android:textSize="@dimen/listview_time_size" />
+
+        <TextView
+            android:id="@+id/query_results_scores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/app_body_black"
+            android:textSize="@dimen/listview_time_size" />
+    </RelativeLayout>
+
+</LinearLayout>

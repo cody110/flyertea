@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        app:leftImgSrc="@drawable/left_back"
+        app:title_bar="实名信息" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/app_bg_grey">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/info_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app_commen_margin"
+                android:gravity="left"
+                android:lineSpacingMultiplier="1.2"
+                android:text="完善实名信息，审核通过将发放实名认证标志，提高您在众多飞客中的威信，并获得线下某些活动的参与权或者优先权，如单身派对、人脉拓展鸡尾酒晚宴等" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_item_height"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:gravity="center_vertical"
+                android:text="个人信息" />
+
+            <com.ideal.flyerteacafes.ui.view.LtreLayout
+                android:id="@+id/realname_layout"
+                style="@style/ltre_1"
+                android:background="@drawable/frames_top"
+                app:ltTextLtre="真实姓名"
+                app:rtGravity="right"
+                app:rtHintTextLtre="请填写"/>
+
+
+
+
+            <com.ideal.flyerteacafes.ui.view.LtreLayout
+                android:id="@+id/id_layotu"
+                style="@style/ltre_1"
+                android:background="@drawable/frames_bottom_margin_left"
+                app:ltTextLtre="证件号"
+                app:rtGravity="right"
+                app:rtHintTextLtre="填写"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_item_height"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:gravity="center_vertical"
+                android:text="地址信息(选填)" />
+
+            <com.ideal.flyerteacafes.ui.view.LtctriLayout
+                android:id="@+id/location_layout"
+                style="@style/ltctri_1"
+                android:background="@drawable/frames_bottom_margin_left"
+                app:ltText="所在地  "
+                app:ltWeight="0"
+                app:ctWeight="1"
+                app:ctGravity="right"
+                app:ctHintText="请选择"/>
+
+            <com.ideal.flyerteacafes.ui.view.LtreLayout
+                android:id="@+id/address_layout"
+                style="@style/ltre_1"
+                android:background="@drawable/frames_bottom"
+                app:ltTextLtre="家庭住址"
+                app:rtGravity="right"
+                app:rtHintTextLtre="填写"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_item_height"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:gravity="center_vertical"
+                android:text="职场信息(选填)"
+                android:id="@+id/textView6" />
+
+            <com.ideal.flyerteacafes.ui.view.LtctriLayout
+                android:id="@+id/working_conditions_layout"
+                style="@style/ltctri_1"
+                android:background="@drawable/frames_top"
+                app:ltText="工作情况"
+                app:ctHintText="请选择"/>
+
+            <com.ideal.flyerteacafes.ui.view.LtctriLayout
+                android:id="@+id/work_industry_layout"
+                style="@style/ltctri_1"
+                android:background="@drawable/frames_bottom_margin_left"
+                app:ltText="工作行业"
+                app:ctHintText="填写"/>
+
+            <com.ideal.flyerteacafes.ui.view.LtctriLayout
+                android:id="@+id/occupation_category_layout"
+                style="@style/ltctri_1"
+                android:background="@drawable/frames_bottom_margin_left"
+                app:ltText="职业类别"
+                app:ctHintText="填写"/>
+
+            <com.ideal.flyerteacafes.ui.view.LtreLayout
+                android:id="@+id/position_layout"
+                style="@style/ltre_1"
+                android:background="@drawable/frames_bottom_margin_left"
+                app:ltTextLtre="职位"
+                app:rtGravity="right"
+                app:rtHintTextLtre="填写"/>
+
+            <com.ideal.flyerteacafes.ui.view.LtreLayout
+                android:id="@+id/company_layout"
+                style="@style/ltre_1"
+                android:background="@drawable/frames_bottom"
+                app:ltTextLtre="所在公司"
+                app:rtGravity="right"
+                app:rtHintTextLtre="填写"/>
+
+
+            <TextView
+                android:id="@+id/save_btn"
+                style="@style/button_1"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="50dp"
+                android:text="保存" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

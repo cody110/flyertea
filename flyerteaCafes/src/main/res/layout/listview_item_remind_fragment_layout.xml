@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/icon_45"
+        android:layout_height="@dimen/icon_45"
+        android:layout_margin="@dimen/app_edge_distance">
+
+        <com.ideal.flyerteacafes.ui.controls.RoundImageView
+            android:id="@+id/listview_item_remind_fragment_icon"
+            android:layout_width="@dimen/icon_45"
+            android:layout_height="@dimen/icon_45"
+            android:src="@drawable/icon_def" />
+
+        <ImageView
+            android:id="@+id/listview_item_remind_fragment_isread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/drawer_remind" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/listview_distance"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/listview_item_remind_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/app_body_grey"
+                android:textSize="@dimen/listview_body_size" />
+
+            <TextView
+                android:id="@+id/listview_item_remind_fragment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_body_grey"
+                android:textSize="@dimen/listview_time_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/listview_item_remind_fragment_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_string_center_safe"
+            android:singleLine="true"
+            android:textColor="@color/app_body_black"
+            android:textSize="@dimen/listview_body_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

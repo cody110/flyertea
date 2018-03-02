@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/sosolocation_fragment_bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/sosolocation_fragment_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textColor="@color/app_bg_title"
+        android:background="@drawable/confirm_location"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/sosolocation_fragment_ensure_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:textColor="@color/app_bg_title"
+        android:background="@drawable/confirm_location"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:id="@+id/sosolocation_fragment_center_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/sosolocation_fragment_center_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#7F000000"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/sosolocation_fragment_center_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/de_ic_new" />
+    </LinearLayout>
+
+</RelativeLayout>

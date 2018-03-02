@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/red">
+
+    <Button
+        android:id="@+id/popupwindow_mythread_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的主贴" />
+
+    <Button
+        android:id="@+id/popupwindow_mythread_replies_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的回复" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_bg"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/thread_bottom_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:id="@+id/shar_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/thread_bottom_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:horizontalSpacing="10dp"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="10dp" />
+
+        <include layout="@layout/include_line_xi_view" />
+
+        <TextView
+            android:id="@+id/thread_bottom_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="取消分享"
+            android:textColor="@color/app_body_black"
+            android:textSize="@dimen/app_body_size_1" />
+
+    </LinearLayout>
+
+</LinearLayout>

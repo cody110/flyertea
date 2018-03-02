@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/dialog_thread_comment_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/dialog_bg" />
+
+    <LinearLayout
+        android:id="@+id/dialog_thread_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_xi"
+            android:background="@color/app_line_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/app_commen_margin"
+            android:layout_marginRight="@dimen/app_commen_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="@color/app_bg_title"
+                android:textSize="@dimen/app_body_size_2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="回复"
+                android:textColor="@color/live_com_info_item"
+                android:textSize="@dimen/app_body_size_2" />
+
+            <TextView
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布"
+                android:textColor="@color/app_body_grey"
+                android:textSize="@dimen/app_body_size_2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_xi"
+            android:background="@color/app_line_color" />
+
+        <EditText
+            android:id="@+id/dialog_thread_comment_edit"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="@dimen/app_commen_margin"
+            android:layout_marginRight="@dimen/app_commen_margin"
+            android:background="@null"
+            android:gravity="top|left"
+            android:hint="请输入回帖内容"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/app_body_blacks"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/app_body_size_2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_xi"
+            android:background="@color/app_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dialog_thread_comment_biaoqing"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="center"
+                android:src="@drawable/reply_face" />
+
+            <ImageView
+                android:id="@+id/dialog_thread_comment_tupian"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="center"
+                android:src="@drawable/reply_photos" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/dialog_thread_comment_down"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="center"
+                android:src="@drawable/reply_keyboard" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/dialog_thread_comment_look_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

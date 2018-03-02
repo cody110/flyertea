@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        app:leftImgSrc="@drawable/left_back"
+        app:rightText="确定"
+        app:title_bar="所有分类" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_commen_margin"
+        android:textColor="@color/content"
+        android:text="帖子分类" />
+
+    <GridView
+        android:id="@+id/thrad_type_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dp"
+        android:paddingLeft="@dimen/app_commen_margin"
+        android:paddingRight="@dimen/app_commen_margin"
+        android:numColumns="3"
+        android:verticalSpacing="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_commen_margin"
+        android:textColor="@color/content"
+        android:text="帖子排序" />
+
+
+    <GridView
+        android:id="@+id/thrad_sort_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:paddingLeft="@dimen/app_commen_margin"
+        android:paddingRight="@dimen/app_commen_margin"
+        android:verticalSpacing="10dp" />
+
+
+
+</LinearLayout>

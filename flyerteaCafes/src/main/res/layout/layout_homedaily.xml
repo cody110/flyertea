@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 版块fragment布局 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.controls.PullToRefreshView
+        android:id="@+id/fragment_reLoadview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="49dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/fragment_refreshview_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+    </com.ideal.flyerteacafes.ui.controls.PullToRefreshView>
+
+   <!-- <include
+        android:id="@+id/homedaily_head"
+        layout="@layout/include_home_actionbar" />-->
+    <com.ideal.flyerteacafes.ui.view.AppTitleBar
+        android:id="@+id/home_fragment_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

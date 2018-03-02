@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_grey"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        app:leftImgSrc="@drawable/left_back"
+        app:title_bar="@string/push_notification_ac_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/mrl_message_notification"
+            layout="@layout/include_push_notification_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listview_item_height"
+            android:layout_marginTop="@dimen/app_commen_margin" />
+
+        <include
+            android:id="@+id/mrl_reply_mine"
+            layout="@layout/include_push_notification_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listview_item_height"
+            android:layout_marginTop="@dimen/app_commen_margin" />
+
+        <include
+            android:id="@+id/mrl_private_letter"
+            layout="@layout/include_push_notification_item" />
+
+        <include
+            android:id="@+id/mrl_add_friends"
+            layout="@layout/include_push_notification_item" />
+
+        <include
+            android:id="@+id/mrl_send_flowers"
+            layout="@layout/include_push_notification_item" />
+
+        <include
+            android:id="@+id/mrl_receive_message_time"
+            layout="@layout/include_message_time_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listview_item_height"
+            android:layout_marginTop="@dimen/app_commen_margin" />
+    </LinearLayout>
+</LinearLayout>

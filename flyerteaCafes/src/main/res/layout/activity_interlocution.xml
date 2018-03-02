@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        android:orientation="horizontal"
+        android:background="@color/app_bg_title">
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/left_back"
+            android:scaleType="center"/>
+
+
+        <com.ideal.flyerteacafes.ui.view.PagerSlidingTabStrip
+            android:id="@+id/tabstrip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bg_title_height"
+            android:layout_centerInParent="true"
+            app:pstsIndicatorColor="@color/white"
+            app:pstsPaddingMiddle="false"
+            app:pstsShouldExpand="false"
+            app:pstsTabPaddingLeftRight="14dp"
+            app:pstsTextColorSelected="@color/white"
+            app:pstsTextColorUnSelected="@color/title_no_select"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_indicator_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+
+        <com.ideal.flyerteacafes.ui.controls.WriteThreadImageView
+            android:id="@+id/tiwen_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/tiwen_icon" />
+
+    </RelativeLayout>
+
+</LinearLayout>

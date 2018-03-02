@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 版块fragment布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragment_refreshview_toplayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.ideal.flyerteacafes.ui.controls.PullToRefreshView
+            android:id="@+id/fragment_refreshview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--com.ideal.flyerteacafes.ui.controls.HeaderViewPagerListView  -->
+            <ListView
+                android:id="@+id/fragment_refreshview_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.ideal.flyerteacafes.ui.controls.PullToRefreshView>
+
+
+        <RelativeLayout
+            android:id="@+id/fragment_refreshview_normal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fragment_refreshview_normal_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/app_body_black"
+                android:textSize="@dimen/app_body_size_1" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

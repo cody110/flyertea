@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ideal.flyerteacafes.ui.controls.VerticalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/birthday_task_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:gravity="center_vertical"
+                android:text="生日任务"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/app_body_size_2"
+                android:visibility="gone" />
+
+            <com.ideal.flyerteacafes.ui.layout.TaskListGroupLayout
+                android:id="@+id/birthday_task_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frames_top_bottom"
+                android:orientation="vertical" />
+
+
+            <TextView
+                android:id="@+id/recommended_task_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:gravity="center_vertical"
+                android:text="每日任务"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/app_body_size_2"
+                android:visibility="gone" />
+
+            <com.ideal.flyerteacafes.ui.layout.TaskListGroupLayout
+                android:id="@+id/recommended_task_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frames_top_bottom"
+                android:orientation="vertical" />
+
+
+            <TextView
+                android:id="@+id/advanced_task_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:gravity="center_vertical"
+                android:text="活动任务"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/app_body_size_2"
+                android:visibility="gone" />
+
+            <com.ideal.flyerteacafes.ui.layout.TaskListGroupLayout
+                android:id="@+id/advanced_task_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frames_top_bottom"
+                android:orientation="vertical" />
+
+
+            <TextView
+                android:id="@+id/newbie_task_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:gravity="center_vertical"
+                android:text="新手任务"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/app_body_size_2"
+                android:visibility="gone" />
+
+            <com.ideal.flyerteacafes.ui.layout.TaskListGroupLayout
+                android:id="@+id/newbie_task_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frames_top_bottom"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/normal_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="300dp"
+            android:src="@drawable/task_normal_icon" />
+
+    </RelativeLayout>
+
+
+</com.ideal.flyerteacafes.ui.controls.VerticalScrollView>

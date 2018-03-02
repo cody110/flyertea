@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_grey"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        app:leftImgSrc="@drawable/left_back"
+        app:title_bar="@string/personal_data_ac_title" />
+
+    <!-- 所在地 -->
+    <com.ideal.flyerteacafes.ui.view.LtctriLayout
+        android:id="@+id/mltci_city_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:background="@drawable/frames_bottom"
+        app:ctColor="@color/app_body_blacks"
+        app:ctSize="@dimen/app_body_size_2"
+        app:ltColor="@color/app_grey"
+        app:ltText="@string/location"
+        app:ltWidth="@dimen/personal_data_left_view_width" />
+
+    <!-- 行业 -->
+    <com.ideal.flyerteacafes.ui.view.LtctriLayout
+        android:id="@+id/mltci_hangye_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:layout_marginTop="@dimen/app_commen_margin"
+        android:background="@drawable/frames_top_bottom"
+        app:ctColor="@color/app_body_blacks"
+        app:ctSize="@dimen/app_body_size_2"
+        app:ltColor="@color/app_grey"
+        app:ltText="@string/personal_hangye"
+        app:ltWidth="@dimen/personal_data_left_view_width" />
+
+    <!-- 职业 -->
+    <com.ideal.flyerteacafes.ui.view.LtctriLayout
+        android:id="@+id/mltci_vocation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:layout_marginTop="@dimen/app_commen_margin"
+        android:background="@drawable/frames_top_bottom"
+        app:ctColor="@color/app_body_blacks"
+        app:ctSize="@dimen/app_body_size_2"
+        app:ltColor="@color/app_grey"
+        app:ltText="@string/personal_vocation"
+        app:ltWidth="@dimen/personal_data_left_view_width" />
+
+    <!-- 兴趣爱好 -->
+    <com.ideal.flyerteacafes.ui.view.LtctriLayout
+        android:id="@+id/mltci_hobbies_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:layout_marginTop="@dimen/app_commen_margin"
+        android:background="@drawable/frames_top_bottom"
+        app:ctColor="@color/app_body_blacks"
+        app:ctSize="@dimen/app_body_size_2"
+        app:ltColor="@color/app_grey"
+        app:ltText="@string/hobbies"
+        app:ltWidth="@dimen/personal_data_left_view_width"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/mll_personal_hobbies"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:layout_marginTop="@dimen/app_commen_margin"
+        android:background="@drawable/frames_top_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/mtv_hobbies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/app_grey"
+            android:text="@string/hobbies"
+            />
+
+
+        <TextView
+            android:id="@+id/mtv_content_hobbies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:textColor="@color/app_body_blacks" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

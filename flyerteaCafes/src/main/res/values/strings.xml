@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="app_name">飞客茶馆</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="network_no_connection">网络不可用</string>
+    <string name="data_error">数据异常</string>
+    <string name="islong_remind">请先登录后才能继续浏览</string>
+    <string name="click_the_reply">点击进行回复</string>
+    <string name="press_one_more_time_exitapp">再按一次退出程序</string>
+    <string name="post_details_remind_authority">抱歉，你所在的用户组没有浏览该帖子的权限。</string>
+
+    <!-- PullToRefreshView -->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+
+
+    <!-- 下载apk提示 -->
+    <string name="download_apk_message">开始下载飞客茶馆啦...</string>
+
+    <!-- 个人中心模块 -->
+    <string name="person_name">testflyer3</string>
+    <string name="membership_level">公司职员</string>
+    <string name="sign">签到</string>
+    <string name="person_my">我的</string>
+    <string name="my_friends">好友</string>
+    <string name="private_message">私信</string>
+    <string name="zhibo">直播</string>
+    <string name="remind">提醒</string>
+    <string name="post">帖子</string>
+    <string name="collection">收藏</string>
+    <string name="prestige">威望:</string>
+    <string name="femtometers">飞米:</string>
+    <string name="mine_ac_femtometers">飞米 2840</string>
+    <string name="mine_ac_integral">积分 1648</string>
+    <string name="mine_ac_flowers">鲜花 48</string>
+
+    <string name="hotel_reservation">酒店预订</string>
+    <string name="credit_card_integral">信用卡积分</string>
+    <string name="entry_points">入门知识</string>
+    <string name="for_the_rebate">飞客返利</string>
+    <string name="fly_for_raiders">飞客攻略</string>
+    <string name="fly_for_steward">飞客管家</string>
+    <string name="system_setting">系统设置</string>
+    <string name="fly_for_hui">飞客惠</string>
+
+    <string name="flyer_housekeeper">飞客管家</string>
+    <string name="flyer_experience">飞客体验师</string>
+    <string name="earn_fly_meters">赚取飞米</string>
+    <string name="mutual_exchange">互助交易</string>
+    <string name="commonly_used_telephone">常用电话</string>
+
+    <!-- 我的模块 -->
+    <string name="mine_ac_xiaobai">小白入门</string>
+    <string name="mine_ac_earn_fly_meters">飞米商城</string>
+    <string name="mine_ac_for_the_rebate">飞客返利</string>
+    <string name="mine_ac_mutual_exchange">互助交易</string>
+    <string name="mine_ac_about_us">关于我们</string>
+    <string name="mine_ac_feedback">意见反馈</string>
+    <string name="mine_ac_comment_set">通用设置</string>
+    <string name="mine_ac_account_set">账户设置</string>
+    <string name="mine_ac_my_zhibo">我的直播</string>
+    <string name="mine_ac_record">最近浏览</string>
+    <string name="mine_ac_recommend_friends">推荐好友</string>
+
+    <!-- 基础版块 -->
+    <string name="defaultModul">新帖,热帖,精华帖</string>
+    <string name="defaultNewPost">新帖</string>
+    <string name="defaultHotPost">热帖</string>
+    <string name="defaultCreamPost">精华帖</string>
+
+    <!-- SubscriptionColumnFragment -->
+    <string name="subscription_column_title">订阅栏目</string>
+    <string name="subscription_column_click_add">点击添加更多栏目</string>
+
+    <!-- 侧边栏 -->
+    <string name="drawer_sign_in">签到</string>
+    <string name="drawer_sign_in_ok">已签到</string>
+    <string name="drawer_private_letter">私信</string>
+    <string name="drawer_remind">提醒</string>
+    <string name="drawer_posts">帖子</string>
+    <string name="drawer_collect">收藏</string>
+    <string name="drawer_home_page">首页</string>
+    <string name="drawer_forum">版块</string>
+    <string name="drawer_book">预订</string>
+    <string name="drawer_preferential">优惠</string>
+    <string name="drawer_credit_card_point">信用卡积分</string>
+    <string name="drawer_information_article">飞客知道</string>
+    <string name="drawer_travel_experience">旅行体验</string>
+    <string name="drawer_hotel_reservation">酒店预订</string>
+    <string name="drawer_fly_entry">飞客入门</string>
+    <string name="drawer_hotel_report">酒店Report</string>
+    <string name="drawer_flight_report">飞行Report</string>
+    <string name="drawer_grader_def">游客</string>
+    <string name="home_tab_me">我的</string>
+    <string name="home_tab_chat">聊天</string>
+
+    <!-- 社区首页（未关注） -->
+    <string name="forum_ac_title">社区</string>
+    <string name="forum_ac_complete">完成</string>
+    <!-- 社区首页 -->
+    <string name="community_ac_plate">社区版块</string>
+    <string name="community_ac_my_topic">我的帖子</string>
+    <string name="community_ac_record">最近浏览</string>
+    <string name="community_ac_attention_plate">关注版块</string>
+    <string name="community_ac_all_plate">全部版块</string>
+    <string name="community_ac_new_post">最新发帖</string>
+    <string name="community_ac_new_hot">最新热门</string>
+    <string name="community_ac_new_digest">最新精华</string>
+
+    <!-- 添加任务：系统预设 -->
+    <string name="add_task_ac_title">添加任务</string>
+    <string name="add_task_ac_cancel">取消</string>
+    <string name="add_task_ac_ok">完成</string>
+    <string name="add_task_ac_name">任务名称</string>
+    <string name="add_task_ac_name_hint">请选择</string>
+    <string name="add_task_ac_card_number">卡号后4位</string>
+    <string name="add_task_ac_card_number_hint">选填</string>
+    <string name="add_task_ac_add">添加</string>
+    <string name="add_task_ac_manually_add_tv">未找到任务，</string>
+    <string name="add_task_ac_manually_add">手动添加</string>
+
+    <!-- 添加任务：手动添加 -->
+    <string name="manually_add_ac_base_info">基本信息</string>
+    <string name="manually_add_ac_brank">所属银行</string>
+    <string name="manually_add_ac_brank_hint">请选择</string>
+    <string name="manually_add_ac_task_name">任务名称</string>
+    <string name="manually_add_ac_task_name_hint">请填写任务名称</string>
+    <string name="manually_add_ac_task_drscrible">任务描述</string>
+    <string name="manually_add_ac_task_drscrible_hint">请填写任务描述</string>
+    <string name="manually_add_ac_card_number">卡号后4位</string>
+    <string name="manually_add_ac_task_period">任务周期(支持多条)</string>
+    <string name="manually_add_ac_task_period_edit">编辑</string>
+    <string name="manually_add_ac_first_period">第一期</string>
+    <string name="manually_add_ac_first_period_hint">选择起止时间</string>
+    <string name="manually_add_ac_expense">消费笔数</string>
+    <string name="manually_add_ac_hint">选填</string>
+    <string name="manually_add_ac_money">每笔金额</string>
+    <string name="manually_add_ac_total_money">总金额</string>
+    <string name="manually_add_ac_add_period">+\t新增周期</string>
+
+    <!-- 任务搜索 -->
+    <string name="task_search_ac_brank">选择银行</string>
+    <string name="task_search_ac_card_channel">卡组织</string>
+
+    <!-- 选择银行 -->
+    <string name="select_brank_ac_title">选择银行</string>
+
+    <!-- 选择起止日期 -->
+    <string name="select_date_ac_title">选择起止日期</string>
+
+    <!-- 消息中心 -->
+    <string name="message_center_ac_title">消息中心</string>
+    <string name="message_center_ac_reply_my">回复我的</string>
+    <string name="message_center_ac_send_flowers">送我鲜花</string>
+    <string name="message_center_ac_add_friends">加我好友</string>
+    <string name="message_center_ac_post_achievement">帖子成就</string>
+    <string name="message_center_ac_other_message">系统提醒</string>
+    <string name="message_center_ac_flyer_activies">活动精选</string>
+    <string name="message_center_ac_flyer_recommend">好文推荐</string>
+
+    <!-- 推送通知 -->
+    <string name="push_notification_ac_title">推送通知</string>
+    <string name="push_notification_ac_message_notification">接收新消息通知</string>
+    <string name="push_notification_ac_reply_mine">回复我的</string>
+    <string name="push_notification_ac_private_letter">私信</string>
+    <string name="push_notification_ac_add_friends">加我好友</string>
+    <string name="push_notification_ac_send_flowers">送我鲜花</string>
+    <string name="push_notification_ac_receive_message_times">接收消息时段</string>
+    <string name="push_notification_ac_receive_message_times_hint">8:00-22:00</string>
+
+    <!-- 回复我的 -->
+    <string name="reply_mine_ac_title">回复我的</string>
+
+    <!-- 其他消息 -->
+    <string name="other_message_ac_title">系統提醒</string>
+
+    <!-- 送我鲜花 -->
+    <string name="send_flowers_ac_title">送我鲜花</string>
+
+    <!-- 加我好友 -->
+    <string name="add_my_friends_ac_title">加我好友</string>
+
+    <!-- 飞客活动 -->
+    <string name="flyer_activies_ac_title">飞客活动</string>
+
+    <string name="include_data_load_null">暂无消息</string>
+
+    <!-- 我的关注PopupWindow -->
+    <string name="pop_my_attention_topic_type">帖子分类</string>
+    <string name="pop_my_attention_topic_sort">帖子排序</string>
+
+
+    <!-- 筛选 -->
+    <string name="include_dressing_name">筛选</string>
+    <string name="include_dressing_tab_one">分类</string>
+    <string name="include_dressing_tab_two">标签</string>
+
+    <!-- 发布帖子 -->
+    <string name="publish_post_title_name">发布主帖</string>
+    <string name="publish_post_edit_hint_title">请输入标题(80)</string>
+    <string name="publish_post_edit_hint_body">帖子正文</string>
+    <string name="reply_title_comment">评论回复</string>
+    <string name="reply_title_quote">引用回复</string>
+    <string name="reply_title_issue">发布帖子</string>
+    <string name="reply_title_feedback">意见反馈</string>
+    <string name="reply_edit_hige">回复内容</string>
+    <string name="developing">该功能模块正在开发中,敬请期待！</string>
+    <string name="reply_title_post">文章回复</string>
+
+    <!-- 标题名程 -->
+    <string name="title_name_remind">我的消息</string>
+    <string name="title_name_mythread">我的帖子</string>
+    <string name="title_name_hotel_reservation">酒店预订</string>
+    <string name="title_name_preferential">优惠</string>
+    <string name="title_name_travel_experience">酒店Report</string>
+    <string name="title_name_information_article">飞客知道</string>
+    <string name="title_name_postdetails">帖子详情</string>
+    <string name="title_name_creditcardresults">查询结果</string>
+    <string name="title_name_hotel_report">酒店Report</string>
+    <string name="title_name_flight_report">飞行Report</string>
+    <string name="title_name_userinfo">个人资料</string>
+    <string name="title_name_search">搜索</string>
+    <string name="title_name_reminddetails">详情</string>
+    <string name="title_name_private_letter">私信</string>
+    <string name="title_name_term_service">服务条款</string>
+    <string name="title_name_my_collect">我的收藏</string>
+    <string name="title_name_new_hand">入门知识</string>
+    <string name="title_name_setting">设置</string>
+    <string name="title_name_about_us">关于我们</string>
+    <string name="title_name_forum_type">分类选择</string>
+
+    <!-- 信用卡积分 -->
+    <string name="title_name_creditcard_point">信用卡积分</string>
+    <string name="creditcard_point_bank_name">银行名称</string>
+    <string name="creditcard_point_back_point">返积分类型</string>
+    <string name="creditcard_point_business_type">商户类型(MCC码)</string>
+    <string name="creditcard_shuoming_text">以上数据由飞客茶馆会员提供,积分最终以银行记录为准</string>
+
+    <!-- replyPost -->
+    <string name="replypost_not_message_pointout">请输入评论内容</string>
+    <string name="login_reminder">请您先登录</string>
+
+    <!-- 个人资料-->
+    <string name="userinfo_ac_title">个人资料</string>
+    <string name="userinfo_head">头像</string>
+    <string name="userinfo_nick_name">昵称</string>
+    <string name="userinfo_name">用户名</string>
+    <string name="userinfo_mailbox">常用邮箱</string>
+    <string name="userinfo_sex">性别</string>
+    <string name="userinfo_grade">论坛等级</string>
+    <string name="userinfo_authority">阅读权限</string>
+    <string name="userinfo_point">论坛积分</string>
+    <string name="userinfo_fermi">飞米</string>
+    <string name="userinfo_flwer">鲜花数</string>
+    <string name="mythread_mythread">我的主帖</string>
+    <string name="mythread_repley">我的回复</string>
+    <string name="def_all">全部</string>
+
+    <!-- 登录注册 -->
+    <string name="login_register_prompt">还没有帐号?点击这里注册</string>
+    <string name="login_login_prompt">已经有账号?点击这里登录</string>
+    <string name="login_edit_username">用户名</string>
+    <string name="login_edit_passwords">帐户密码</string>
+    <string name="login_safety_problem_text">安全提问(未设置请忽略)</string>
+    <string name="login_edit_safety_passwords">请输入安全问题答案</string>
+    <string name="register_affirm_passwords">确认密码</string>
+    <string name="register_mailbox">常用邮箱</string>
+    <string name="login_term_of_service">飞客茶馆旅行网  服务条款</string>
+    <string name="not_next_page">已经没有更多内容</string>
+    <string name="get_data_failure">获取数据失败</string>
+    <string name="search_edittext_def">请输入需要搜索的帖子</string>
+    <string name="search_clear_history">清空搜索历史</string>
+    <string name="search_not_more_history">没有搜索历史</string>
+    <string name="userinfo_loginout">退出登录</string>
+    <string name="remind_remind">论坛消息</string>
+    <string name="remind_notice">公告消息</string>
+    <string name="remind_push">推送消息</string>
+    <string name="userinfo_dialog_post">主帖</string>
+    <string name="userinfo_dialog_reply">回复</string>
+    <string name="userinfo_dialog_cream">精华</string>
+    <string name="userinfo_dialog_hot">热帖</string>
+    <string name="pop_share_text">分享帖子</string>
+    <string name="pop_collect_text">收藏帖子</string>
+    <string name="pop_newhand_text">入门知识</string>
+    <string name="pop_set_text">软件设置</string>
+    <string name="login">登录</string>
+    <string name="login_or_register">登录/注册</string>
+    <string name="register">注册</string>
+    <!-- 设置 -->
+    <string name="setting_server_push">消息推送</string>
+    <string name="setting_server_push_explain">关闭此开关将收不到App消息推送</string>
+    <string name="setting_picture_mode">无图模式</string>
+    <string name="setting_picture_mode_explain">3G/4G网络下不下载图片</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_recommend_friends">推荐飞客给好友</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_comment_us">评论我们</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_private">对附近可见</string>
+    <string name="setting_confidential">保密</string>
+    <string name="setting_version">版本号</string>
+
+    <!-- 飞客日报 -->
+    <string name="fly_daily">飞客日报</string>
+
+
+    <!-- 引导页 -->
+    <string name="guide_taste">立即体验</string>
+
+    <!-- 聊天界面 -->
+    <string name="chat">消息</string>
+    <string name="friends">我的好友</string>
+    <string name="people_nearby">附近</string>
+    <string name="friends_ac_mine_message">我的消息</string>
+    <string name="friends_ac_people_nearby">附近的人</string>
+    <string name="friends_ac_add_friends">添加朋友</string>
+    <string name="friends_ac_new_friends">新的朋友</string>
+
+    <!-- 我的资料 -->
+    <string name="my_datum">我的资料</string>
+    <string name="personal_signature">个性签名</string>
+    <string name="personal_signature_hint">这个人很懒，除了回忆什么都没有留下...</string>
+    <string name="email">邮\t\t\t\t箱 </string>
+    <string name="personal_hangye">TA的行业</string>
+    <string name="personal_vocation">TA的职业</string>
+    <string name="froum_integral">论坛积分</string>
+    <string name="fly_m">飞\t\t\t\t米</string>
+    <string name="add_friends">加为好友</string>
+    <string name="send_private">发送私信</string>
+    <string name="send_message">发消息</string>
+    <string name="my_datum_ac_check_in_num">入住\t\t785</string>
+    <string name="my_datum_ac_flower_num">鲜花\t\t302</string>
+    <string name="my_datum_ac_add_friends">+加好友</string>
+    <string name="my_datum_ac_boy_thread">他的帖子\t</string>
+    <string name="my_datum_ac_girl_thread">她的帖子\t</string>
+    <string name="my_datum_ac_girl_reply">她的回复\t</string>
+    <string name="my_datum_ac_boy_reply">他的回复\t</string>
+    <string name="my_datum_ac_send_private_message">发私信</string>
+    <string name="my_datum_ac_send_message">发消息</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_ac_title">个人资料</string>
+
+    <!-- 关于我们 -->
+    <string name="about_us_taoist_priest">关注微信</string>
+    <string name="about_us_flyer_caff">飞客茶馆微博</string>
+    <string name="about_us_flyertea">www.flyertea.com</string>
+    <string name="about_us_phone">021-61099712</string>
+    <string name="about_us_comment_us">评论我们</string>
+
+    <string name="share_app_recommend_friends">飞客茶馆，专业的常旅客社区，也是中文最大的常旅客聚集平台。住五星级酒店、升套房，飞行坐商务舱、头等舱，可以对旅行的自己更好一点，价格可以更实惠一点。所有秘籍，都在飞客茶馆。</string>
+    <string name="share_app_recommend_fridens_url">http://www.flyertea.com/newcomment/index.php/Api/ShareApp.html</string>
+    <string name="share_app_recommend_fridens_title">飞客茶馆</string>
+
+    <string name="web_back">返回</string>
+
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="send_flowers">送花</string>
+    <string name="save">保存</string>
+    <string name="not_save">不保存</string>
+    <string name="remind_is_save">选择是否保存草稿</string>
+    <string name="hotkey_search">热词搜索</string>
+
+    <string name="wifi_remind">您当前的网络是WIFI</string>
+    <string name="yidong_remind">您现在使用的是移动数据网络</string>
+    <string name="yidong_one_remind">非wifi模式下载图片会产生较多流量，您可以通过图片下载设置来更改默认设置</string>
+
+    <string name="me_attention">我的关注</string>
+    <string name="attention">关注</string>
+    <string name="defaults">默认</string>
+
+    <string name="post_not_exite">您查看的帖子不存在</string>
+    <string name="reply">回复</string>
+
+    <string name="de_plugins_image">图片</string>
+    <string name="de_plugins_camera">相机</string>
+    <string name="de_save">"保存"</string>
+
+    <string name="verification_remind">对方需要你填写验证信息</string>
+    <string name="verification_title">验证信息</string>
+    <string name="verification_right_text">发送</string>
+    <string name="editdata_title">编辑资料</string>
+    <string name="send">发送</string>
+
+    <!-- editdata -->
+    <string name="postbox">邮\t\t 箱</string>
+    <string name="edit_sex">性\t\t 别</string>
+    <string name="location">所在地\t</string>
+    <string name="hangye">行\t\t 业</string>
+    <string name="vocation">职\t\t 业</string>
+    <string name="company">公\t\t 司</string>
+    <string name="accomplish">完成</string>
+    <string name="hobbies">兴趣爱好</string>
+    <string name="qianming">个性签名</string>
+
+    <string name="not_login">还没有登录~~</string>
+    <string name="immediately_login">立即登录</string>
+    <string name="not_account_number">还没有账号？</string>
+    <string name="register_now">立即注册</string>
+    <string name="data_list_null">获取数据为空</string>
+    <string name="delete">删除</string>
+    <string name="de_dialog_item_message_delete">删除消息</string>
+
+    <string name="not_sightml">TA暂无个性签名</string>
+    <string name="no_read_message">"···"</string>
+    <string name="near_not_people">附近沒有其他飞客</string>
+    <string name="near_not_people_remind">只有在设置里面设置对附近的人可见，才能查看附近的人哦</string>
+    <string name="near_to_setting">前往设置</string>
+    <string name="photo_yulan">图片预览</string>
+    <string name="delete_me">对方已把您删除</string>
+
+
+    <!-- 飞客惠页面 -->
+    <string name="classic">经典</string>
+    <string name="no_image">无图</string>
+    <string name="all">分类</string>
+    <string name="discount_type">优惠类型</string>
+    <string name="on_trial">适用地区</string>
+    <string name="newest">最新</string>
+    <string name="homelist_des">待你厌倦江湖，我陪你归隐山下!</string>
+    <string name="homelist_hotel_name">洲际酒店</string>
+    <string name="homelist_disconut">打折促销</string>
+    <string name="homelist_time">2015-8-17</string>
+    <string name="homelist_Zam">10</string>
+    <string name="homelist_no">10</string>
+
+    <string name="disinfo_yiguoqi">已过期</string>
+    <string name="disinfo_zan_remind">您已经赞或倒赞过了</string>
+    <string name="getlocation_is_null">定位未成功，请检查定位权限是否开启...</string>
+
+    <string name="zhibo_title">直播</string>
+    <string name="remen">热门</string>
+    <string name="tupian_chaochu_remind">最多可选择9张</string>
+
+    <string name="write_zhibo_et_hint">请输入内容</string>
+
+    <!--直播详情-->
+    <string name="live_share">分享</string>
+    <string name="live_report">举报</string>
+
+    <string name="commit">提交</string>
+    <string name="not_display_position">不显示位置</string>
+
+    <!--直播举报-->
+    <string name="live_report_content">提示:慎用举报功能。恶意举报将被吃处罚。</string>
+
+    <!--第三方登录-->
+    <string name="type_login_phone">手机号登录</string>
+    <string name="type_login_username">用户名登录</string>
+    <string name="type_login">登\t录</string>
+    <string name="type_tips_first">请输入用户名/手机号</string>
+    <string name="type_fast_login">快捷登录</string>
+    <string name="type_fast_register">快捷注册</string>
+    <string name="finish">完成</string>
+
+
+    <string name="write_zhibo_remind">发送文字直播,威望+2;发送图片直播,威望+5</string>
+
+    <string name="weixin">微信</string>
+    <string name="qq">QQ</string>
+    <string name="sine">新浪微博</string>
+
+    <string name="binding_ok">已绑定</string>
+    <string name="binding_no">未绑定</string>
+
+    <string name="title_setting_account">账号设置</string>
+
+    <string name="topic_weekly">每周话题</string>
+    <string name="topic_more">更多>></string>
+    <string name="topic_list_title">话题集锦</string>
+
+
+    <string name="warm_tips">温馨提示</string>
+    <string name="liveinfo_delete_feed_remind">是否确认删除自己的直播</string>
+    <string name="liveinfo_delete_comment_remind">是否确认删除自己的回复</string>
+
+    <string name="home_fm_btn_report">报告</string>
+    <string name="home_fm_btn_wenda">问答</string>
+    <string name="home_fm_btn_gonglue">攻略</string>
+    <string name="home_fm_btn_youhui">优惠</string>
+    <string name="home_fm_btn_store">飞客优选</string>
+    <string name="home_fm_btn_gongju">工具</string>
+    <string name="home_fm_btn_huodong">活动</string>
+    <string name="home_fm_btn_tiyanshi">体验师</string>
+
+    <string name="html_title_enshou">互助交易</string>
+    <string name="html_title_fanli">飞客返利</string>
+    <string name="html_title_experience">飞客体验师</string>
+    <string name="html_title_store">飞客优选</string>
+    <string name="html_title_flashsale">飞米商城</string>
+    <string name="html_title_plugin">常用电话</string>
+    <string name="html_title_hotel_search">招行酒店查询</string>
+    <string name="html_title_creditcard">信用卡</string>
+    <string name="home_hot_interlocution">热门活动</string>
+    <string name="home_post_tuijian">推荐帖子</string>
+    <string name="home_post_list_add_friend">加为好友</string>
+    <string name="home_post_list_added_friend">已为好友</string>
+
+
+    <string name="lsq_text_time_tv">00:00</string>
+    <string name="lsq_tusdk">TuSDK</string>
+    <string name="lsq_back">返回</string>
+    <string name="lsq_clip">剪辑</string>
+    <string name="lsq_next">下一步</string>
+    <string name="lsq_stepback">后退</string>
+    <string name="lsq_text_confirm">确认</string>
+    <string name="lsq_save">保存</string>
+    <string name="lsq_add_filter">视频编辑</string>
+
+    <!--发帖-->
+    <string name="title_write_thread">发表帖子</string>
+
+    <string name="share_thread_content">我在飞客茶馆发现了一篇不错的帖子分享给你，赶紧看看吧！</string>
+    <string name="thread_send_flower_remind">您已送过鲜花</string>
+
+    <string name="search_hint">搜索酒店/城市/航班/信用卡等</string>
+    <string name="search_dialog_tip">搜索中...</string>
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+
+    <string name="search_tips_ok">知道了</string>
+    <string name="search_tips">搜索小技巧</string>
+    <string name="search_tips_details">1、直接搜索“酒店集团名称”、“航空公司名称”查找常客计划攻略\n\n
+2、直接搜索“银行名称”、“信用卡名称”查找申卡用卡攻略\n\n
+3、直接搜索“酒店名称”、“酒店品牌”、“国家城市名称”查找酒店报告\n\n
+4、直接搜索“航班号”、“航线名称”、“机型名称”查找飞行报告\n\n
+5、直接搜索“机场名称”查找休息室报告</string>
+
+    <string name="about_us_explain">这是一个独一无二的常旅客社区，也是中文最大的常旅
+客聚集平台。\n
+来自世界各地的常旅客会员汇聚在这里，共同讨论酒店、
+航空、信用卡的各个方面：积分兑换免费酒店、里程兑
+换机票、信用卡优惠打折……\n
+起飞降落城市转折，无论你在世界的哪一个角落，无论
+你将去向何方，都能在飞客茶馆找到和你志同道合的朋
+友，聊酒店、聊积分、聊人生……</string>
+    <string name="term_of_service">\n继续注册前请先阅读【飞客茶馆旅行网】网站协议 \n\n
+
+欢迎您加入【飞客茶馆旅行网】参加交流和讨论，【飞客茶馆旅行网】为公共网站，为维护网上公共秩序和社会稳定，请您于注册前阅读【飞客茶馆旅行网】管理规定：\n\n
+第一章 总则\n\n
+第一条 本网站命名为“飞客茶馆旅行网”，以下简称“网站”。\n
+第二条 为维护“飞客茶馆旅行网”网站秩序，保障网站用户的合法权益。 \n
+第三条 为享有网站各项正当权益，网站服务使用人（以下称"用户"）应当同意本规定的全部条款并按照页面上的提示完成“飞客茶馆旅行网”注册程序，成为“飞客茶馆旅行网”正式用户，享有网站权益，承担网站义务。\n
+第四条 本规定为“飞客茶馆旅行网”网站的基本规定，网站其它一切规定和规则，不得与本规定相抵触。\n
+第五条 本规定最终解释权归“飞客茶馆旅行网”。 \n\n
+
+第二章 用户的基本权利和义务\n\n
+第六条 用户只能使用汉字、英文字母、下划线及它们的组合，且最多不超过14个字符(7个汉字)注册，禁止使用空格、各种符号、无法显示的字符等特殊字符，否则网站将不予注册并有权删除。\n
+第七条 网站提倡实名注册。如发现注册账号中含有不雅文字或不恰当名称的会员，网站保留取消其会员资格的权利。\n
+(1)请勿以党和国家领导人或其他社会名人的真实姓名、字号、艺名、笔名注册；\n
+(2)请勿以国家机构或其他机构的名称注册；\n
+(3)请勿注册和其他网友之名相近、相仿的名字；\n
+(4)请勿注册不文明、不健康名字，或包含歧视、侮辱、猥亵类词语的名字；\n
+(5)请勿注册易产生歧义、引起他人误解的名字。\n
+
+第八条 网站用户人人平等\n
+第九条 用户应当对以其用户帐号进行的所有活动和事件负法律责任；网站用户应遵守中华人民共和国法律、法规，自行承担一切可能因网站活动直接或间接引起的法律责任。 \n
+第十条 用户帐号和密码由用户负责保管；用户不应将其帐号、密码转让或出借予他人使用。如用户发现其帐号遭他人非法使用，应立即通知管理员。因黑客行为或用户的保管疏忽导致帐号、密码遭他人非法使用，不承担任何责任。\n 
+第十一条 用户有在网站各正常版面发贴和读贴的权限，若版面中有特殊规定，或用户因受到处罚而关闭权限则例外。 \n
+第十二条 网站用户有权依照网站招募申请的相关规定申请担任版主以及其它网站职务。\n
+
+第十三条 网站会员有权依照申请流程申请开设网站新版。\n
+第十四条　　网站用户认为自己在网站的权益受到侵害，有权根据网站相关规定进行投诉申诉。\n
+　　　　　　网站用户有权对网站管理行为提出批评意见，有权对管理人员进行投诉弹劾\n
+　　　　　　网站用户有权对网站提出咨询、意见、建议，有权要求相应管理人员给予答复。 \n
+第十五条 网站用户享有在网站寻求与“飞客茶馆旅行网”业务相应的支持和服务的权利。 \n
+第十六条 用户在使用网站服务过程中，必须遵循以下原则： \n
+1. 遵守中国有关的法律和法规；\n
+2. 遵守所有与网络服务有关的网络协议、规定和程序； \n
+3. 遵守网站管理规定以及其他规定；\n
+4. 不得为任何非法目的而使用网站服务； \n
+5. 不得利用网站服务进行任何可能对互联网或移动网正常运转造成不利影响的行为； \n
+6. 不得利用网站服务上传、展示或传播任何虚假的、骚扰性的、中伤他人的、辱骂性的、恐吓性的、庸俗淫秽的或其他任何非法的信息资料；\n
+7. 不得侵犯其他任何第三方的专利权、著作权、商标权、名誉权或其他任何合法权益；\n
+8. 不得利用网站服务进行任何不利于“飞客茶馆旅行网”网站的行为；\n
+9. 如发现任何非法使用用户帐号或帐号出现安全漏洞的情况，应立即通告网站；\n
+10．禁止未经网站允许发布广告；\n
+11．严禁发表与网站宗旨无关主题、与主题无关回复、上传与内容无关图片\n
+12．禁止利用网站bug扰乱网站秩序；\n
+13．严禁破坏网站公共秩序及侵害网站利益的其它行为。\n
+第十七条 如用户在使用网站服务时违反任何上述规定，网站或其授权的人有权要求用户改正或直接采取一切必要的措施（包括但不限于更改或删除用户张贴的内容等、暂停或终止用户使用网络服务的权利）以减轻用户不当行为造成的影响。\n\n
+第三章 ID管理和发帖规则 \n\n
+
+第十八条 凡用户ID中出现如下信息者，网站有权予以收回或注销：\n
+1．以党和国家领导人或其他名人的真实姓名、字号、艺名、笔名、头衔注册；\n
+2．以国家机构或其他机构的名称注册；\n
+3．恶意注册与其它网友网名相近、易造成误解的；\n
+4．含有对其他网友有攻击、侮辱、挑衅、猥亵等内容的；\n
+5．用户名带有广告性质的；\n
+6．不文明、不健康信息；\n
+7．易产生歧义、引起他人误解信息；\n
+8．其它法律法规以及网站规定的禁止规则中包含的信息。 \n
+第十九条 网站注册之日起两年未登陆ID，网站有权收回。\n
+第二十条 用户不得利用本站制作、复制和传播下列信息： \n
+1．违反中华人民共和国宪法以及其它法律、法规的；\n
+2．危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；\n
+3．损害国家荣誉和利益的； \n
+4．煽动民族仇恨、民族歧视，破坏民族团结的； \n
+5．破坏国家宗教政策，宣扬邪教和封建迷信的； \n
+6．散布谣言，扰乱社会秩序，破坏社会稳定的； \n
+7．散布淫秽、色情、赌博、暴力、凶杀、恐怖或教唆犯罪的； \n
+8．侮辱或者诽谤他人，侵害他人合法权益的； \n
+9．含有法律、行政法规禁止的其他内容的；\n
+10．辱骂、人身攻击的； \n
+11．非经网站批准授权的任何形式的广告； \n
+12．病毒代码及其它攻击性程序代码； \n
+13．其它扰乱网站言论秩序的内容。 \n
+第二十一条 凡上述信息网站那有权删除屏蔽；凡违反规定发布上述信息者，网站视情节轻重有权对其进行封ID、注销ID、封IP等处理，情节严重者将交由相关部门追究法律责任。 \n
+第二十二条 ID管理和发帖规则未尽事宜参照相关规定以及各版版规。 \n\n
+第四章 网站管理\n\n
+第二十三条 本网站设立网站站务委员会为最高权力管理机构，负责网站发展规划、站务建设、服务修改、管理员任免及管理人员权限变更等重大提议的审查及决策，下设站务管理、站务监督、规则制定小组为日常管理机构，在网站站务委员会的授权下行使约定范畴内的管理活动。\n
+第二十四条 网站站务委员会成员（简称“常委”）原则上由各个日常管理机构的副组长（含）以上级人员组成，具有对网站日常活动的重大决策进行表决的权利。\n
+第二十五条 网站站务委员设立管理员、超级版主、版主，负责网站日常管理事务，包括组织编制网站发展规划、审批栏目、设置管理人员权限、对外交流、发布网站重要公告及协调网站管理团队工作等事务，由网站管理员代表网站站务委员会全面主持。\n
+第二十六条 网站管理员、超级版主和版主等不同管理角色组成的团队负责网站日常事务管理的具体工作：\n
+1．版主负责管理所辖版面，内容主要包括版面公共秩序维护、问题解答、精华文章遴选、组织网站活动等工作；\n
+2．超级版主负责分管辖区的内容引导、发掘、宣传及监管等工作；并协助管理员日常管理工作，参与版主任免、考核工作；\n
+3．网站管理员全面代理网站站务委员会工作。\n\n
+第五章 隐私权保护 \n\n
+
+第二十七条 保护用户隐私是网站基本政策，“飞客茶馆旅行网”保证不对外公开或向第三方提供单个用户的注册资料及用户在使用网络服务时存储在网站的非公开内容，但下列情况除外：\n
+1．事先获得用户的明确授权； \n
+2．根据有关的法律法规要求； \n
+3．按照相关政府主管部门的要求； \n
+4．为维护社会公众的利益； \n
+5．为维护“飞客茶馆旅行网”的合法权益。 \n
+第二十八条 “飞客茶馆旅行网”可能会与第三方合作向用户提供相关的网络服务，在此情况下，如该第三方同意承担与“飞客茶馆旅行网”同等的保护用户隐私的责任，则“飞客茶馆旅行网”有权将用户的注册资料等提供给该第三方。 \n
+第二十九条 在不透露单个用户隐私资料的前提下，网站有权对整个用户数据库进行分析并对用户数据库进行商业上的使用。 　\n\n
+第六章 版权申明\n\n
+
+第三十条 “飞客茶馆旅行网”网站所有注册用户观点均不代表“飞客茶馆旅行网”立场，发帖者文责自负。 \n
+第三十一条 用户所发布信息信息版权归作者本人所有，“飞客茶馆旅行网”有权将在本网站发布的信息网站、电子期刊、平面出版等其他用途，文章有附带版权声明者除外。用于平面出版等商业性用途时，网站将按同行业的稿费标准支付作者并使用前先知会作者。 \n
+第三十二条 用户转贴应注明原始出处和时间，并负担由此可能产生的版权责任； \n
+第三十三条 网站根据版面管理需要有权删除转帖； \n
+第三十四条 任何转载、引用发表于本网站的版权文章、图片及其它作品须符合以下规范： \n
+1．用于非商业、非盈利、非广告性目的时需注明作者及出处为““飞客茶馆旅行网””或www.flyertea.com” ； \n
+2．用于商业、盈利、广告性目的时需征得文章、图片以及其它作品的原作者的同意，不得未经作者同意而剽窃、引用本网站的任何版权作品；\n
+3．任何文章、图片以及其它作品的修改或删除均应保持作者原意并征求原作者同意，并注明授权范围。\n\n
+第七章 免责声明\n\n
+第三十五条 用户明确同意其使用“飞客茶馆旅行网”服务所存在的风险将完全由其自己承担；因其使用网站而产生的一切后果也由其自己承担，“飞客茶馆旅行网”对用户不承担任何责任；\n
+第三十六条 网站不担保网站服务一定能满足用户的要求，也不担保网站服务不会中断，对网站服务的及时性、安全性、准确性也都不作担保；\n
+第三十七条 网站不保证为向用户提供便利而设置的外部链接的准确性和完整性，同时，对于该等外部链接指向的不由“飞客茶馆旅行网”实际控制的任何网页上的内容，网站不承担任何责任；\n
+第三十八条 对于因不可抗力或网站不能控制的原因造成的服务中断或其它缺陷（含系统维护和升级），本网站不承担任何责任，但将尽力减少因此而给用户造成的损失和影响；\n
+第三十九条 本网站会员之间通过网站相识、交往中所发生或可能发生的任何心理、生理上的伤害和经济上的损失，本网站不承担任何责任；\n
+第四十条 本网站会员如因资料保管不妥或其他原因而导致个人隐私被他人泄露的，本网站不承担任何责任；\n
+第四十一条 网站用户因为违反本网站规定而触犯中华人民共和国法律的，责任自负，本网站不承担任何责任。\n</string>
+
+</resources>

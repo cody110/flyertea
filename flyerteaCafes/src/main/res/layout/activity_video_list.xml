@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/activity_1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        android:background="@color/bg_toolbar">
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:src="@drawable/left_back"
+            android:scaleType="center"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/app_body_size_2" />
+
+        <TextView
+            android:id="@+id/btn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableRight="@mipmap/icon_triangle_down_black"
+            android:text="手机相册"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/app_bg_title_size" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_line_xi_view" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/frames_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/next_btn"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="@dimen/app_commen_margin"
+            android:background="@drawable/light_grey_frame"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+
+</LinearLayout>

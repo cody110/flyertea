@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/near_fragment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/near_not_setting_kejian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false">
+
+        <TextView
+            android:id="@+id/near_to_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/near_to_setting"
+            android:padding="10dp"
+            android:textColor="@color/app_bg_title"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/near_not_people_remind"
+            android:layout_above="@id/near_to_setting"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:textColor="@color/app_body_grey" />
+    </RelativeLayout>
+
+</RelativeLayout>

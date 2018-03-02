@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_forum_bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <com.ideal.flyerteacafes.ui.view.ToolBar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bg_title_height"
+            app:background_bar="@color/app_bg_grey"
+            app:leftText="取消"
+            app:leftTextColor="@color/app_body_grey"
+            app:rightText="完成"
+            app:rightTextColor="@color/app_bg_title"
+            app:titleTextColor_bar="@color/app_body_black"
+            app:titleTextSize="@dimen/app_bg_title_size"
+            app:title_bar="选择版块" />
+
+        <LinearLayout
+            android:id="@+id/pop_forum_wheel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <com.ideal.flyerteacafes.ui.wheelview.WheelView
+                android:id="@+id/pop_forum_wheel_one_level"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.ideal.flyerteacafes.ui.wheelview.WheelView
+                android:id="@+id/pop_forum_wheel_two_level"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.ideal.flyerteacafes.ui.wheelview.WheelView
+                android:id="@+id/pop_forum_wheel_three_level"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

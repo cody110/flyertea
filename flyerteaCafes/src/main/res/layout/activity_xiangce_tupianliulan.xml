@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <fragment
+        android:id="@+id/xiangce_tupianliulan_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.ideal.flyerteacafes.ui.fragment.page.AcdseeFragment"/>
+
+    <com.ideal.flyerteacafes.ui.view.AppTitleBar
+        android:id="@+id/xiangce_tupianliulan_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/xiangce_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        android:layout_gravity="bottom"
+        android:background="@color/app_bg_grey"
+        android:clickable="true"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:id="@+id/xiangce_bottom_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0张"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/xiangce_bottom_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/app_bg_title"
+            android:padding="@dimen/listview_distance"/>
+    </RelativeLayout>
+
+</RelativeLayout>

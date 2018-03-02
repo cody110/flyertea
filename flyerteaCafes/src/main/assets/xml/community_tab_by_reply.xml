@@ -1,0 +1,8 @@
+<root>
+
+    <typemode name="按回复" type="new" />
+    <typemode name="按发帖" type="newpost" />
+    <typemode name="热门" type="hot" />
+    <typemode name="精华" type="digest" />
+
+</root>

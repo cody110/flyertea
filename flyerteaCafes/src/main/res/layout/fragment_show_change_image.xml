@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ideal.flyerteacafes.ui.controls.ZoomableImageView
+        android:id="@+id/show_change_imageview_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix" />
+
+    <TextView
+        android:id="@+id/show_change_imageindex_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffff0000"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

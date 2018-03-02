@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    
+    <View
+        android:id="@+id/include_divider_top"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey"
+    />
+    <LinearLayout
+        android:id="@+id/include_commen_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/input_left_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/me"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey"/>
+         <EditText
+             android:id="@+id/include_input_et"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:paddingLeft="10dp"
+             android:textSize="13sp"
+             android:hint="@string/type_tips_first"
+             android:textColorHint="@color/app_body_grey"
+             android:background="@null"/>
+        <TextView
+            android:id="@+id/btn_obtain_code"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/app_bg_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/blue_get_border"
+            android:textSize="12dp"
+            android:text="获取验证码"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/include_divider_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey" />
+</LinearLayout>

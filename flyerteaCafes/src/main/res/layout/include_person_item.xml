@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/person_item_heights"
+    android:background="@drawable/common_item_selector">
+
+    <LinearLayout
+        android:id="@+id/include_main_person"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_item_heights"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/comment_person_name"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/body_security_distance"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/about_us_ac_sina"
+            android:drawablePadding="@dimen/app_edge_distance"
+            android:gravity="center_vertical"
+            android:text="公共" />
+
+        <TextView
+            android:id="@+id/comment_person_remind_num"
+            android:layout_width="@dimen/remind_round_dot_size"
+            android:layout_height="@dimen/remind_round_dot_size"
+            android:layout_marginRight="@dimen/app_string_center_safe"
+            android:background="@drawable/drawer_remind"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_body_size_3"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/comment_person_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/body_security_distance"
+            android:layout_toRightOf="@+id/comment_person_name"
+            android:gravity="center_vertical"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_person_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_xi"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="45dp"
+        android:background="@color/app_line_color" />
+</RelativeLayout>

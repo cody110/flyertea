@@ -1,0 +1,11 @@
+<root>
+
+    <typemode name="关注" type="follow" />
+    <typemode name="全部" type="all" />
+    <typemode name="酒店" type="19" />
+    <typemode name="航空" type="57" />
+    <typemode name="信用卡" type="226" />
+    <typemode name="直播" type="feed" />
+
+
+</root>

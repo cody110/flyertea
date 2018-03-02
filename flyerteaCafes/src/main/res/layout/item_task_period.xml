@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/app_commen_margin"
+    android:layout_marginRight="@dimen/app_commen_margin"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/include_line_blue_view" />
+
+    <!-- 第一期 -->
+    <com.ideal.flyerteacafes.ui.view.LtctriLayout
+        android:id="@+id/mltcri_frist_period_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:background="@drawable/frames_bottom_margin_left"
+        app:ctColor="@color/app_body_blacks"
+        app:ctHintColor="@color/app_hint_text_color"
+        app:ctHintText="@string/manually_add_ac_first_period_hint"
+        app:ctSize="@dimen/app_body_size_2"
+        app:ltColor="@color/app_body_blacks"
+        app:ltText="@string/manually_add_ac_first_period"
+        app:ltWidth="@dimen/personal_data_left_view_width"
+        app:riSrc="@drawable/right_arrow" />
+
+    <!-- 消费笔数 -->
+    <com.ideal.flyerteacafes.ui.view.LtreLayout
+        android:id="@+id/mltre_expense_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:background="@drawable/frames_bottom_margin_left"
+        app:ltColorLtre="@color/app_body_blacks"
+        app:ltTextLtre="@string/manually_add_ac_expense"
+        app:ltWidthLtre="@dimen/personal_data_left_view_width"
+        app:rtColorLtre="@color/app_body_blacks"
+        app:rtHintColorLtre="@color/app_hint_text_color"
+        app:rtHintTextLtre="@string/manually_add_ac_hint"
+        app:rtInputType="number" />
+
+    <!-- 每笔金额 -->
+    <com.ideal.flyerteacafes.ui.view.LtreLayout
+        android:id="@+id/mltre_money_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:background="@drawable/frames_bottom_margin_left"
+        app:ltColorLtre="@color/app_body_blacks"
+        app:ltTextLtre="@string/manually_add_ac_money"
+        app:ltWidthLtre="@dimen/personal_data_left_view_width"
+        app:rtColorLtre="@color/app_body_blacks"
+        app:rtHintColorLtre="@color/app_hint_text_color"
+        app:rtHintTextLtre="@string/manually_add_ac_hint"
+        app:rtInputType="number" />
+
+    <!-- 总金额 -->
+    <com.ideal.flyerteacafes.ui.view.LtreLayout
+        android:id="@+id/mltre_total_money_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:background="@drawable/frames_bottom"
+        app:ltColorLtre="@color/app_body_blacks"
+        app:ltTextLtre="@string/manually_add_ac_total_money"
+        app:ltWidthLtre="@dimen/personal_data_left_view_width"
+        app:rtColorLtre="@color/app_body_blacks"
+        app:rtHintColorLtre="@color/app_hint_text_color"
+        app:rtHintTextLtre="@string/manually_add_ac_hint"
+        app:rtInputType="number" />
+</LinearLayout>

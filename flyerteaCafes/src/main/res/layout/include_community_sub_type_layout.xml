@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/include_community_subtype_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.ideal.flyerteacafes.ui.view.CommunitySubTypeLayout
+        android:id="@+id/community_sub_community_subtype_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/community_sub_type_layout_height"
+        android:layout_weight="1"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/community_sub_choose_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="@color/app_line_color" />
+
+        <TextView
+            android:id="@+id/community_sub_choose_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="按回复"
+            android:textColor="@color/app_body_black"
+            android:textSize="@dimen/app_body_size_2" />
+
+        <ImageView
+            android:id="@+id/community_sub_choose_type_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:rotation="0"
+            android:src="@drawable/icon_load_more" />
+
+    </LinearLayout>
+
+</LinearLayout>

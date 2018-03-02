@@ -1,0 +1,341 @@
+apply plugin: 'com.android.application'
+def bakPath = file("${buildDir}/bakApk/") //指定tinker包基准文件存放位置
+
+
+android {
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    signingConfigs {
+        release {
+            keyAlias 'flyertea'
+            keyPassword 'cody1314'
+            storeFile file('D:/flyertea.keystore')
+            storePassword 'cody1314'
+        }
+        config {
+            keyAlias 'flyertea'
+            keyPassword 'cody1314'
+            storeFile file('D:/flyertea.keystore')
+            storePassword 'cody1314'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+//指定apk名成
+//            applicationVariants.all { variant ->
+//                variant.outputs.each { output ->
+//                    def outputFile = output.outputFile
+//                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                        // 输出apk名称为boohee_v1.0_2015-01-15_wandoujia.apk
+//                        def fileName = "flyertea_v${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+//                        output.outputFile = new File(outputFile.parent, fileName)
+//                    }
+//                }
+//            }
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+
+
+    defaultConfig {
+        applicationId "com.ideal.flyerteacafes"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        multiDexEnabled true
+        signingConfig signingConfigs.release
+
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+//    dexOptions {
+//        incremental false
+//        javaMaxHeapSize "2048m"
+//        preDexLibraries = false
+//        jumboMode = true
+//    }
+
+//    configurations {
+//        all*.exclude group: 'com.android.support', module: 'support-v4'
+//    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+
+    allprojects {
+        repositories {
+            maven {url 'https://dl.bintray.com/youzanyun/maven/'}
+            mavenCentral()
+
+        }
+    }
+
+    productFlavors {
+        web {}
+        xiaomi {}
+        huawei {}
+        yingyongbao {}
+        ali {}
+        _360zhushou {}
+        meizu {}
+        jinli {}
+        oppo {}
+        mumayi {}
+        leshangdian {}
+        jifeng {}
+        anzhishichang {}
+        baiduzhushou {}
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE : name]
+    }
+
+
+
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':library:CalendarPicker')
+    compile project(':swipeMenuListViewLibrary')
+    compile project(':social_sdk')
+    compile project(':ptr-lib')
+    compile project(':tusdk')
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.google.code.gson:gson:2.5'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.6.4'
+    compile 'com.google.dagger:dagger-compiler:2.0.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'com.google.code.findbugs:jsr305:3.0.0'
+    compile 'com.android.support:recyclerview-v7:22.2.0'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:support-v13:22.2.0'
+    compile 'com.charonchui.vitamio:vitamio:4.2.2'
+    compile 'org.xutils:xutils:3.3.38'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.youzanyun.open.mobile:basic:5.1.0'
+    compile 'com.alipay.euler:andfix:0.5.0@aar'
+    //引入AndFix热修复模块
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    //生成appilcation时使用
+    compile("com.tencent.tinker:tinker-android-lib:${TINKER_VERSION}") { changing = true }
+    //tinker核心sdk库
+    provided("com.tencent.tinker:tinker-android-anno:${TINKER_VERSION}") { changing = true }
+    //列表视频添加
+    compile 'com.github.danylovolokh:video-player-manager:0.2.0'
+    compile 'com.github.danylovolokh:list-visibility-utils:0.2.0'
+}
+
+
+//ext {
+//    tinkerEnable = true
+//    tinkerOldApkPath = "${bakPath}/flyerteaCafes-0110-11-30-12"
+//    //tinkerId是用了区分基准安装包的，我们需要严格保证一个基准包的唯一性
+//    tinkerID = "6.16.0"
+//    tinkerApplyMappingPath = "${tinkerOldApkPath}"
+//    tinkerApplyResourcePath = "${tinkerOldApkPath}"
+//    tinkerBuildFlavorDirectory= "${tinkerOldApkPath}"
+//}
+//
+//def buildWithTinker() {
+//
+//    return ext.tinkerEnable
+//}
+//
+//def getOldApkPath() {
+//
+//    return ext.tinkerOldApkPath
+//}
+//
+//def getApplyMappingPath() {
+//    return ext.tinkerApplyMappingPath
+//}
+//
+//def getApplyResourceMappingPath() {
+//    return ext.tinkerApplyResourcePath
+//}
+//
+//def getTinkerIdValue() {
+//    return ext.tinkerID
+//}
+//
+//def getTinkerBuildFlavorDirectory(){
+//    return ext.tinkerBuildFlavorDirectory
+//}
+//
+//if (buildWithTinker()) {
+//    //启用tinker
+//    apply plugin: 'com.tencent.tinker.patch'
+//
+//    //所有tinker相关的参数配置
+//    tinkerPatch {
+//
+//        oldApk = getOldApkPath() //指定old apk文件径
+//
+//        ignoreWarning = false   //不忽略tinker的警告，有则中止patch文件的生成
+//
+//        useSign = true  //强制patch文件也使用签名
+//
+//        tinkerEnable = buildWithTinker(); //指定是否启用tinker
+//
+//        buildConfig {
+//
+//            applyMapping = getApplyMappingPath()  //指定old apk打包时所使用的混淆文件
+//
+//            applyResourceMapping = getApplyResourceMappingPath()  //指定old apk的资源文件
+//
+//            tinkerId = getTinkerIdValue() //指定TinkerID
+//
+//            keepDexApply = false
+//        }
+//
+//        dex {
+//
+//            dexMode = "jar" //jar、raw
+//            pattern = ["classes*.dex", "assets/secondary-dex-?.jar"] //指定dex文件目录
+//            loader = ["com.ideal.flyerteacafes.caff.TeaApplication"] //指定加载patch文件时用到的类,application
+//        }
+//
+//        lib {
+//
+//            pattern = ["libs/*/*.so"]
+//        }
+//
+//        res {
+//
+//            pattern = ["res/*", "assets/*", "resources.arcs", "AndoridManifest.xml"]
+//            //指定tinker可以修改的资源路径
+//
+//            ignoreChange = ["assets/sample_meta.txt"] //指定不受影响的资源路径
+//
+//            largeModSize = 100 //资源修改大小默认值
+//        }
+//
+//        packageConfig {
+//
+//            configField("patchMessage","fix the 1.0 version's bugs")
+//
+//            configField("patchVersion", "1.0")
+//        }
+//    }
+//
+//    List<String> flavors = new ArrayList<>();
+//    project.android.productFlavors.each { flavor ->
+//        flavors.add(flavor.name)
+//    }
+//    boolean hasFlavors = flavors.size() > 0
+//    /**
+//     * bak apk and mapping
+//     */
+//    android.applicationVariants.all { variant ->
+//        /**
+//         * task type, you want to bak
+//         */
+//        def taskName = variant.name
+//        def date = new Date().format("MMdd-HH-mm-ss")
+//
+//        tasks.all {
+//            if ("assemble${taskName.capitalize()}".equalsIgnoreCase(it.name)) {
+//
+//                it.doLast {
+//                    copy {
+//                        def fileNamePrefix = "${project.name}-${variant.baseName}"
+//                        def newFileNamePrefix = hasFlavors ? "${fileNamePrefix}" : "${fileNamePrefix}-${date}"
+//
+//                        def destPath = hasFlavors ? file("${bakPath}/${project.name}-${date}/${variant.flavorName}") : bakPath
+//                        from variant.outputs.outputFile
+//                        into destPath
+//                        rename { String fileName ->
+//                            fileName.replace("${fileNamePrefix}.apk", "${newFileNamePrefix}.apk")
+//                        }
+//
+//                        from "${buildDir}/outputs/mapping/${variant.dirName}/mapping.txt"
+//                        into destPath
+//                        rename { String fileName ->
+//                            fileName.replace("mapping.txt", "${newFileNamePrefix}-mapping.txt")
+//                        }
+//
+//                        from "${buildDir}/intermediates/symbols/${variant.dirName}/R.txt"
+//                        into destPath
+//                        rename { String fileName ->
+//                            fileName.replace("R.txt", "${newFileNamePrefix}-R.txt")
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//    }
+//
+//    /**
+//     * 多渠道脚本
+//     */
+//    project.afterEvaluate {
+//        if (hasFlavors) {
+//            task(tinkerPatchAllFlavorRelease) {
+//                group = 'tinker'
+//                def originOldPath = getTinkerBuildFlavorDirectory()
+//                for (String flavor : flavors) {
+//                    def tinkerTask = tasks.getByName("tinkerPatch${flavor.capitalize()}Release")
+//                    dependsOn tinkerTask
+//                    def preAssembleTask = tasks.getByName("process${flavor.capitalize()}ReleaseManifest")
+//                    preAssembleTask.doFirst {
+//                        String flavorName = preAssembleTask.name.substring(7, 8).toLowerCase() + preAssembleTask.name.substring(8, preAssembleTask.name.length() - 15)
+//                        project.tinkerPatch.oldApk = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-release.apk"
+//                        project.tinkerPatch.buildConfig.applyMapping = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-release-mapping.txt"
+//                        project.tinkerPatch.buildConfig.applyResourceMapping = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-release-R.txt"
+//                    }
+//                }
+//            }
+//
+//            task(tinkerPatchAllFlavorDebug) {
+//                group = 'tinker'
+//                def originOldPath = getTinkerBuildFlavorDirectory()
+//                for (String flavor : flavors) {
+//                    def tinkerTask = tasks.getByName("tinkerPatch${flavor.capitalize()}Debug")
+//                    dependsOn tinkerTask
+//                    def preAssembleTask = tasks.getByName("process${flavor.capitalize()}DebugManifest")
+//                    preAssembleTask.doFirst {
+//                        String flavorName = preAssembleTask.name.substring(7, 8).toLowerCase() + preAssembleTask.name.substring(8, preAssembleTask.name.length() - 13)
+//                        project.tinkerPatch.oldApk = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-debug.apk"
+//                        project.tinkerPatch.buildConfig.applyMapping = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-debug-mapping.txt"
+//                        project.tinkerPatch.buildConfig.applyResourceMapping = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-debug-R.txt"
+//                    }
+//
+//                }
+//            }
+//        }
+//    }
+//}
+
+
+

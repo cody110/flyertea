@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_grey"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        app:leftText="@string/add_task_ac_cancel"
+        app:title_bar="@string/add_task_ac_title" />
+
+    <!-- 任务名称-->
+    <com.ideal.flyerteacafes.ui.view.LtctriLayout
+        android:id="@+id/mltcri_task_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_task_item_height"
+        android:background="@drawable/frames_bottom_margin_left"
+        app:ctHintText="@string/add_task_ac_name_hint"
+        app:ctSize="@dimen/app_body_size_2"
+        app:ltColor="@color/app_body_blacks"
+        app:ltText="@string/add_task_ac_name"
+        app:ltWidth="@dimen/personal_data_left_view_width"
+        app:ctHintColor="@color/app_hint_text_color"
+        app:riSrc="@drawable/right_into" />
+
+    <!-- 卡号后4位 -->
+    <com.ideal.flyerteacafes.ui.view.LtreLayout
+        android:id="@+id/mltre_card_number_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_task_item_height"
+        android:background="@drawable/frames_bottom"
+        app:ltColorLtre="@color/app_body_blacks"
+        app:ltText="@string/add_task_ac_card_number"
+        app:ltTextLtre="@string/add_task_ac_card_number"
+        app:ltWidthLtre="@dimen/personal_data_left_view_width"
+        app:rtHintTextLtre="@string/add_task_ac_card_number_hint"
+        app:rtHintColorLtre="@color/app_hint_text_color"
+        app:rtInputType="number"
+        app:rtMaxLengthLtre="4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/commen_btn_margin"
+        android:layout_marginTop="@dimen/comment_btn_margin_top"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mbtn_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/commen_btn_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/commen_btn_margin"
+            android:layout_marginRight="@dimen/commen_btn_margin"
+            android:background="@drawable/common_btn_bg"
+            android:gravity="center"
+            android:text="@string/add_task_ac_add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_bg_title_size" />
+
+        <LinearLayout
+            android:id="@+id/mll_manually_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_commen_margin"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_task_ac_manually_add_tv"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/app_body_size_2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_task_ac_manually_add"
+                android:textColor="@color/app_bg_title"
+                android:textSize="@dimen/app_body_size_2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

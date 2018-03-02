@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><!-- fragment版块下，广告viewpager布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/advert_viewPager_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/advert_viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/advertisement_viewpager_layout_height" />
+
+        <LinearLayout
+            android:id="@+id/advertisement_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/advertisement_viewpager_layout_bottom"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@android:color/black">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/advertisement_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/advertisement_dian_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

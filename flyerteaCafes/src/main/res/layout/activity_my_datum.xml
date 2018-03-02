@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_my"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <com.ideal.flyerteacafes.ui.controls.PullToZoomListView
+        android:id="@+id/mlv_user_topic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:listSelector="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/mll_back_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/app_bg_title">
+
+        <ImageView
+            android:id="@+id/img_back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/app_commen_margin"
+            android:paddingRight="@dimen/app_commen_margin"
+            android:paddingTop="5dp"
+            android:src="@drawable/left_back_white" />
+
+
+        <TextView
+            android:id="@+id/user_datum_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_bg_title_size"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/toolbar_right"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/migv_more_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/app_commen_margin"
+                android:src="@drawable/icon_more_white" />
+
+            <ImageView
+                android:id="@+id/migv_more_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/app_commen_margin"
+                android:src="@mipmap/tableview_loading1" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/my_datum_top"
+        layout="@layout/include_remind_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mll_back_layout_top" />
+
+</RelativeLayout>

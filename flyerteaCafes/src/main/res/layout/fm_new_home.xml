@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/bg_def"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_sign"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/icon_no_sign" />
+
+        <LinearLayout
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/light_grey_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_search_grey" />
+
+            <TextView
+                android:id="@+id/thread_search_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_hint"
+                android:textColor="@color/text_light_grey"
+                android:textColorHint="@color/text_light_grey"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/linetool_remind"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/icon_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_remind" />
+
+            <ImageView
+                android:id="@+id/migv_remind_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="@dimen/app_commen_margin"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/icon_remind"
+                android:src="@drawable/icon_remind"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        android:background="@color/bg_toolbar"
+        android:orientation="horizontal">
+
+        <com.ideal.flyerteacafes.ui.view.PagerSlidingTabStrip
+            android:id="@+id/task_tabstrip"
+            style="@style/psts_1" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/include_line_header_view" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/task_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

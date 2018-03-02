@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 颜色渐变 -->
+    <gradient
+        android:angle="90"
+        android:endColor="#fff"
+        android:startColor="#fff" />
+
+    <!-- 实心颜色 -->
+    <solid android:color="#fff" />
+
+    <!-- 按钮四个圆角 -->
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+
+</shape>

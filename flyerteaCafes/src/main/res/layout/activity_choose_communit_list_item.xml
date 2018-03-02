@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/head_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/body_security_distance">
+
+        <TextView
+            android:id="@+id/forum_one_level_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_body_black"
+            android:textSize="@dimen/app_body_size_2" />
+
+        <TextView
+            android:id="@+id/forum_one_level_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/forum_one_level_text"
+            android:textColor="@color/app_body_black"
+            android:textSize="@dimen/app_body_size_2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.ideal.flyerteacafes.ui.controls.NoScrollGridView
+            android:id="@+id/mgdv_communit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="4dip"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="4dp"
+            android:layout_marginBottom="@dimen/app_string_up_down_safe"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mtv_load_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/body_security_distance"
+        android:text="展开更多"
+        android:drawableRight="@drawable/icon_load_more"
+        android:drawablePadding="3dp"
+        android:textColor="@color/app_body_grey"
+        android:textSize="@dimen/app_body_size_2"
+        android:visibility="visible"/>
+</LinearLayout>

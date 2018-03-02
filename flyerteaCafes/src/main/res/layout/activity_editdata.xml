@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_grey"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height"
+        layout="@layout/include_centre_title_bar" />
+
+    <include
+        android:id="@+id/editdata_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_edit_data_layout" />
+
+    <include
+        android:id="@+id/editdata_postbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_edit_edit_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_xi"
+        android:layout_marginTop="15dp"
+        android:background="@color/app_line_color" />
+
+    <include
+        android:id="@+id/editdata_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_edit_data_layout" />
+
+    <include
+        android:id="@+id/editdata_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_edit_data_layout" />
+
+    <include
+        android:id="@+id/editdata_hangye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_edit_data_layout" />
+
+    <include
+        android:id="@+id/editdata_vocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_edit_data_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_xi"
+        android:layout_marginTop="20dp"
+        android:background="@color/app_line_color" />
+
+    <include
+        android:id="@+id/editdata_hobbies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_edit_data_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_xi"
+        android:layout_marginTop="20dp"
+        android:background="@color/app_line_color" />
+
+    <include
+        android:id="@+id/editdata_qianming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_edit_data_layout" />
+
+</LinearLayout>

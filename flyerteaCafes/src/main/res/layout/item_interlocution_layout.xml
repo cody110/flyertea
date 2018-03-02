@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/app_commen_margin"
+    android:paddingRight="@dimen/app_commen_margin"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/item_interlocution_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/app_body_size_1"
+        android:textColor="@color/app_body_black"
+        android:layout_marginTop="@dimen/app_string_center_safe"
+        android:maxLines="2"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/item_interlocution_groupname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_body_size_3"
+            android:textColor="@color/app_body_grey"
+            android:layout_marginTop="@dimen/app_string_center_safe"
+            android:layout_marginBottom="@dimen/app_string_up_down_safe"
+            android:layout_marginRight="@dimen/app_string_center_safe"/>
+
+
+        <TextView
+            android:id="@+id/item_interlocution_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_body_size_3"
+            android:textColor="@color/app_body_grey"
+            android:layout_marginTop="@dimen/app_string_center_safe"
+            android:layout_marginBottom="@dimen/app_string_up_down_safe"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/item_interlocution_weiwang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_body_size_3"
+            android:textColor="@color/app_body_grey"
+            android:layout_marginTop="@dimen/app_string_center_safe"
+            android:layout_marginBottom="@dimen/app_string_up_down_safe"
+            android:text="威望"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/item_interlocution_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_body_size_3"
+            android:textColor="@color/app_body_grey"
+            android:layout_marginTop="@dimen/app_string_center_safe"
+            android:layout_marginBottom="@dimen/app_string_up_down_safe"
+            android:text="回答"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_xi"
+        android:background="@color/app_line_color"/>
+
+
+</LinearLayout>

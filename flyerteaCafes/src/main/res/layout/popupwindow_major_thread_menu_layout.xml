@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="-1dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/zb_list_comment_icon" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/major_menu_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/major_thread_sort_view_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/major_thread_content_view"
+                android:drawablePadding="10dp"
+                android:text="排版" />
+        </LinearLayout>
+
+        <include layout="@layout/include_line_xi_view" />
+
+        <LinearLayout
+            android:id="@+id/major_thread_content_view_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/major_thread_content_view"
+                android:drawablePadding="10dp"
+                android:text="预览" />
+        </LinearLayout>
+
+        <include layout="@layout/include_line_xi_view" />
+
+        <LinearLayout
+            android:id="@+id/major_thread_content_save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/major_thread_content_sort"
+                android:drawablePadding="10dp"
+                android:text="保存" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

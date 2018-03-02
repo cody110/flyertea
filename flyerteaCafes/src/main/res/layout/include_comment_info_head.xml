@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/comment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="入住希尔顿酒店，赚取高达四倍英航里程" />
+
+    <TextView
+        android:id="@+id/comment_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/comment_title"
+        android:layout_below="@+id/comment_title"
+        android:layout_marginTop="15dp"
+        android:text="飞客茶馆"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/comment_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/comment_author"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/comment_author"
+        android:text="注册奖励"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/comment_type"
+        android:layout_marginRight="20dp"
+        android:text="评论:3条"
+        android:textColor="@color/grey" />
+
+    <View
+        android:id="@+id/comment_head_divider"
+        android:layout_below="@+id/comment_count"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/app_line_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/comment_head_divider" />
+</RelativeLayout>

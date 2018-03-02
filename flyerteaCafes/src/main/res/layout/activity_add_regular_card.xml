@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.ideal.flyerteacafes.ui.view.ToolBar
+        style="@style/toolbar_white"
+        app:title_bar="常客卡信息" />
+
+
+
+    <com.ideal.flyerteacafes.ui.view.LtctriLayout
+        android:id="@+id/type_layout"
+        style="@style/ltctri_2"
+        android:background="@drawable/frames_top"
+        app:ltText="常客卡类型"
+        android:layout_marginTop="30dp"/>
+
+    <com.ideal.flyerteacafes.ui.view.LtctriLayout
+        android:id="@+id/grade_layout"
+        style="@style/ltctri_2"
+        android:background="@drawable/frames_bottom_margin_left"
+        app:ltText="常客卡等级" />
+
+    <com.ideal.flyerteacafes.ui.view.LtreLayout
+        android:id="@+id/id_layout"
+        style="@style/ltre_1"
+        android:background="@drawable/frames_bottom_margin_left"
+        app:ltTextLtre="常客卡卡号"
+        app:rtGravity="right"
+        app:rtInputType="number" />
+
+    <LinearLayout
+        android:id="@+id/img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_item_height"
+        android:background="@drawable/frames_bottom_margin_left"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app_commen_margin"
+            android:layout_weight="1"
+            android:text="认证图片"
+            android:textColor="@color/app_body_black"
+            android:textSize="@dimen/app_body_size_2" />
+
+
+        <ImageView
+            android:id="@+id/rengzhen_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/app_commen_margin"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+
+    <com.ideal.flyerteacafes.ui.view.LtctriLayout
+        android:id="@+id/youxiaoqi_layout"
+        style="@style/ltctri_2"
+        android:background="@drawable/frames_bottom"
+        app:ltText="有效期" />
+
+
+    <TextView
+        android:id="@+id/save_btn"
+        style="@style/button_1"
+        android:layout_marginTop="30dp"
+        android:text="保存" />
+
+</LinearLayout>

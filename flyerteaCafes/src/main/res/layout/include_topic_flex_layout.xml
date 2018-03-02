@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:background="@drawable/reward_tilte"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/flex_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_body_size_1"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="了解更多详情"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_body_size_3"/>
+
+        <ImageView
+            android:id="@+id/flex_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/screen_up"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="4dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/flex_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【参与要求】"
+            android:textSize="@dimen/app_body_size_2"
+            android:textColor="@color/app_bg_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:id="@+id/flex_ask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_body_grey"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【评奖规则】"
+            android:textSize="@dimen/app_body_size_2"
+            android:textColor="@color/app_bg_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:id="@+id/flex_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_body_grey"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【中奖通知】"
+            android:textSize="@dimen/app_body_size_2"
+            android:textColor="@color/app_bg_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:id="@+id/flex_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_body_grey"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

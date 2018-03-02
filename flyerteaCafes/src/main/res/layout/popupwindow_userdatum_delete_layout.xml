@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/popupwindow_user_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/popupwindow_user_bottom_delete_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="解除好友关系"
+            android:textColor="@color/app_bg_title"
+            android:background="@drawable/post_pop_btn_bg"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/popupwindow_user_bottom_canlce_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/app_bg_title"
+            android:background="@drawable/post_pop_btn_bg"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

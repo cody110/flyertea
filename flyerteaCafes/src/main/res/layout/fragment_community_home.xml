@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/task_tabstrip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bg_title_height">
+
+        <com.ideal.flyerteacafes.ui.view.PagerSlidingTabStrip
+            android:id="@+id/task_tabstrip"
+            style="@style/psts_1"
+            android:layout_width="220dp"
+            android:layout_centerInParent="true" />
+
+
+        <ImageView
+            android:id="@+id/fm_community_home_search"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@mipmap/icon_search_black" />
+    </RelativeLayout>
+
+    <include layout="@layout/include_line_header_view" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fm_community_home_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

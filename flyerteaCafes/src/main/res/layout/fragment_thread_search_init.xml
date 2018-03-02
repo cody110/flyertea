@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/delete_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/app_commen_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="历史搜索"
+            android:textColor="@color/app_body_grey"
+            android:textSize="@dimen/app_body_size_2" />
+
+        <ImageView
+            android:id="@+id/btn_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="center"
+            android:src="@drawable/thread_item_delete" />
+    </LinearLayout>
+
+    <com.ideal.flyerteacafes.ui.controls.XCFlowLayout
+        android:id="@+id/view_history_flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/app_commen_margin"
+        android:gravity="center_vertical"
+        android:text="热门搜索"
+        android:textColor="@color/app_body_grey"
+        android:textSize="@dimen/app_body_size_2" />
+
+    <ListView
+        android:id="@+id/hot_key_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

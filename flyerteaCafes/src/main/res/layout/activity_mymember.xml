@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_member_header_bg"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/app_commen_margin"
+            android:layout_marginTop="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.ideal.flyerteacafes.ui.controls.RoundImageView
+                android:id="@+id/face_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/def_face" />
+
+            <TextView
+                android:id="@+id/weiwang_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_commen_margin"
+                android:layout_weight="1"
+                android:text="威望"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/shengji_gonglue_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/goldenrod_border"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="3dp"
+                android:text="升级攻略"
+                android:textColor="@color/app_body_goldenrod"
+                android:textSize="@dimen/app_body_size_2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/seekbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_body_size_2" />
+
+        <com.ideal.flyerteacafes.ui.controls.MySeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:progressDrawable="@drawable/progress_holo_light"
+            android:thumb="@mipmap/detail_icon_schedule_ball" />
+
+        <LinearLayout
+            android:id="@+id/user_grade_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app_commen_margin"
+            android:layout_marginRight="@dimen/app_commen_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" />
+
+
+    </LinearLayout>
+
+
+    <com.ideal.flyerteacafes.ui.layout.BannerViewpager
+        android:id="@+id/banner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:visibility="gone" />
+
+
+</merge>

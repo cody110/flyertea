@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/popupwindow_postdetails_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/post_pop_btn_bg"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/popupwindow_postdetails_bottom_edit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="编辑"
+                android:textColor="@color/app_bg_title"
+                android:background="@null"
+                android:visibility="gone"/>
+
+
+
+            <Button
+                android:id="@+id/popupwindow_postdetails_bottom_reply_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reply_title_quote"
+                android:textColor="@color/app_bg_title"
+                android:background="@null" />
+
+            <View
+                android:id="@+id/popupwindow_postdetails_bottom_flower_reply_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/app_line_color" />
+
+            <Button
+                android:id="@+id/popupwindow_postdetails_bottom_flower_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_flowers"
+                android:textColor="@color/app_bg_title"
+                android:background="@null" />
+
+            <View
+                android:id="@+id/popupwindow_postdetails_bottom_flower_delete_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/app_line_color"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/popupwindow_postdetails_bottom_delete_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textColor="@color/app_bg_title"
+                android:background="@null"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/popupwindow_postdetails_bottom_canlce_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/app_bg_title"
+            android:background="@drawable/post_pop_btn_bg"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

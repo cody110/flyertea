@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cody="http://schemas.android.com/apk/res/com.ideal.flyerteacafes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_image_top_height"
+        android:layout_marginLeft="@dimen/listview_distance"
+        android:layout_marginRight="@dimen/listview_distance"
+        android:layout_marginTop="8dp">
+
+        <com.ideal.flyerteacafes.ui.controls.FlyRoundImageView
+            android:id="@+id/flyhui_sutra_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post_def"
+            cody:borderRadius="@dimen/home_pager_radius"
+            cody:type="round"/>
+
+        <ImageView
+            android:id="@+id/flyhui_sutra_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/flyhui_sutra_hui_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ccFFFFFF"
+            android:padding="3dp"
+            android:layout_marginTop="@dimen/app_commen_margin"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/flyhui_sutra_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/listview_title_size"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:layout_marginLeft="@dimen/listview_distance"
+        android:layout_marginRight="@dimen/listview_distance"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <include
+        layout="@layout/include_flyhui_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

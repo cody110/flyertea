@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/message_center_item_height"
+    android:background="@drawable/common_item_selector">
+
+    <LinearLayout
+        android:id="@+id/include_main_person"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/message_center_item_height"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="32dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/body_security_distance">
+
+            <ImageView
+                android:id="@+id/comment_person_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_flyer_recommend" />
+
+            <TextView
+                android:id="@+id/comment_person_remind_num"
+                android:layout_width="@dimen/remind_round_dot_size"
+                android:layout_height="@dimen/remind_round_dot_size"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/drawer_remind"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_body_size_3"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/body_security_distance"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/comment_person_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="公共"
+                    android:textColor="@color/app_body_blacks"
+                    android:textSize="@dimen/app_body_size_2" />
+
+                <TextView
+                    android:id="@+id/comment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/app_body_size_3"
+                    android:textColor="@color/app_body_grey"
+                    android:layout_marginRight="5dp"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/comment_person_name_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/app_body_size_3"
+                android:layout_marginTop="@dimen/app_string_center_safe"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/comment_person_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/body_security_distance"
+            android:layout_toRightOf="@+id/comment_person_time"
+            android:gravity="center_vertical"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_person_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_xi"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_line_color" />
+</RelativeLayout>

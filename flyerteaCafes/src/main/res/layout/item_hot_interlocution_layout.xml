@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/app_string_up_down_safe"
+    android:paddingTop="@dimen/app_string_up_down_safe">
+
+
+
+    <com.ideal.flyerteacafes.ui.controls.FlyRoundImageView
+        android:id="@+id/item_hot_interlocution_img"
+        android:layout_width="@dimen/list_image_left_width"
+        android:layout_height="@dimen/list_image_left_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_def"
+        app:borderRadius="@dimen/home_pager_radius"
+        app:type="round" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/list_image_left_height"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/app_string_left_right_safe">
+
+        <TextView
+            android:id="@+id/item_hot_interlocution_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_commen_margin"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textColor="@color/home_title_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/app_body_size_1"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_hot_interlocution_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_body_grey"
+                android:textSize="@dimen/app_body_size_3"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

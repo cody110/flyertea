@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 订阅栏目  不可取消   gridview 背景 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <stroke
+        android:width="1px"
+        android:color="@color/app_line_color"
+        android:dashGap="0dp" />
+
+    <corners android:radius="2dp" />
+
+</shape>
